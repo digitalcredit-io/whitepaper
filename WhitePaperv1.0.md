@@ -31,13 +31,13 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 2. Currently, online-based lending, crowd-funding, and ICO are often fraudulent because the financiers or borrowers are falsifying information and their capabilities are incompetent, ultimately causing losses to the funders. The fundamental reason is that funders cannot perform effective assessment and verification of the true identity and true capabilities of creditor.
 
-3. In the field of human resources, such as talent recruitment, often candidates will fictionalize or exaggerate their curriculum vitae and personal abilities. Initial interviews and short-term trial periods often fail to effectively test their true level of competence. When the company discovers the capabilities of recruiters are incompetent, it is often too late: corporate resources have been wasted, and there are numerous cases where companies are unable to recruit the right people in key positions and the company's development is delayed.
+3. In human resources, such as talent recruitment, often candidates will fictionalize or exaggerate their curriculum vitae and personal abilities. Initial interviews and short-term trial periods often fail to effectively test their true level of competence. When the company discovers the capabilities of recruiters are incompetent, it is often too late: corporate resources have been wasted, and there are numerous cases where companies are unable to recruit the right people in key positions and the company's development is delayed.
 
 4. Some underdeveloped areas, poor people, individuals at lower levels of society, even if there are talented people in them, their talents are often wasted due to their inability to be effectively excavated. Because these people are of low birth and lack of social relations and self-powered display platforms, it is harder to obtain job opportunities and social recognition.
 
 5. In some outsourcing areas, such as software outsourcing, design outsourcing and other outsourcing areas, project consignees often cannot effectively verify and assess the actual level of the recipient and suffer losses.
 
-6. In the field of venture capital investment, investors are often unable to effectively verify and evaluate the true level of capabilities of the start-up entrepreneurs and suffer losses; entrepreneurs who have great ideas and action forces are unable to obtain investment because of lack of social relations and connections.
+6. In the field of venture capital investment, investors are often unable to effectively verify and evaluate the true level of capabilities of the start-up entrepreneurs and suffer losses; start-up entrepreneurs who have great ideas and action forces are unable to obtain investment because of lack of social relations and connections.
 
 
 
