@@ -1,7 +1,7 @@
 # Digital Credit White Paper v1.0
 
 **May 13, 2018**
-Bruce Zhang
+**Bruce Zhang**
 digitalcreditio@outlook.com
 digitalcredit.io
 
