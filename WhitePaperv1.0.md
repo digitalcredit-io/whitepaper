@@ -443,11 +443,11 @@ When @bob uses an application called competitionApp, the @competitionApp account
 
 ## Role and Organization Management
 
-Each account can belong to an organization, such as @bob, @stacy and @alice belong to a team @teamA, where @bob is the Team Leader, so when you get @bob.role.teamA, return The value should be "Team Leader."
+Each account can belong to an organization, such as @bob, @stacy and @alice belong to a team @teamA, where @bob is the Team Leader, so when you get @bob.role.teamA, the return value should be "Team Leader."
 
 For an organization, you can define a lot of actions and permissions. For details, refer to the [Permission Management](#permission-management) section.
 
 For example: @bob's role in @teamA is both the Team Leader and Reviewer, and @stacy is the Reviewer in TeamA. Then when @alice submits a proposal for review, it needs to be reviewed by both @bob and @stacy before it can be passed.
 
-In the self-organizing management of Digital Credit, Digital Credit will establish a mechanism to encourage community members to actively participate in the community to contribute to higher authority organizational roles. For example, after a member whose contribution exceeds a certain number and his/her related ability meets the standard, Digital Credit can automatically promote the member's role to Reviewer. Reviewer is more privileged than the regular member and can review the content posted by the regular member. (Like traditional BBS forum management, forum administrators can assign permissions to different sections, such as assigning moderators, etc.)
+For the self-organizing management purpose, Digital Credit will establish a mechanism to encourage community members to actively participate in the community to contribute to get higher organizational roles. For example, when a member whose contribution reached a certain level and his/her related ability meets the standard, Digital Credit can automatically promote the member's role to Reviewer. Reviewer is more privileged than the regular member and can review the content posted by the regular member. (Like traditional BBS forum management, forum administrators can assign permissions to different sections, such as assigning moderators, etc.)
 
