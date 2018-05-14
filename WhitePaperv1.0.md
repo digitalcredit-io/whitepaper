@@ -123,7 +123,7 @@ Unlike traditional passive credit assessment models, blockchain digital credit c
 
 The token and transaction portion of Digital Credit will be based on the well-known, decentralized, blockchain consensus algorithm DPOS (Delegated Proof of Stake) and can implement BFT ( Byzantine Fault-Tolerant, Byzantine Fault Tolerance). Different from POW (Proof of Work) consensus algorithm, this consensus algorithm can ensure the decentralization of blockchain applications while ensuring the high performance of blockchain applications.
 
-Note: In order to develop Digital Credit community and application platform more effective, speed up the launching progress, and improve transaction performance, Digital Credit 1.0's tokens and their transactions, smart contracts, account management, role management and other parts will be based on EOS.IO. Data storage development will be based on Tendermint and BigchainDB. The use of BigchainDB's decentralized and distributed database simplifies and encapsulates blockchain application development and creates an efficient, high-performance blockchain digital credit community and application platform.
+**Note: In order to develop Digital Credit community and application platform more effective, speed up the launching progress, and improve transaction performance, Digital Credit 1.0's tokens and their transactions, smart contracts, account management, role management and other parts will be based on EOS.IO. Data storage development will be based on Tendermint and BigchainDB. The use of BigchainDB's decentralized and distributed database simplifies and encapsulates blockchain application development and creates an efficient, high-performance blockchain digital credit community and application platform.**
 
-Note: Digital Credit will use IPFS to store files.
+**Note: Digital Credit will use IPFS to store files.**
 
