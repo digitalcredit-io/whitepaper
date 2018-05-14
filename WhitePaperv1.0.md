@@ -63,11 +63,11 @@ By using blockchain technology, it is possible to implement a decentralized comm
 
 ## Support Millions of Users
 
-Competing with businesses like Facebook, Linkedin, Indeed, Freelancer, Upwork and Topcoder, require the blockchain digital credit community and application platform capable of handling tens of millions of active daily users. In certain cases, an digital credit community and application platform may not work unless a critical mass of users is reached and therefore a platform that can handle very large numbers of users is paramount.
+Competing with businesses like Facebook, Linkedin, Indeed, Freelancer, Upwork and Topcoder, require the blockchain digital credit community and application platform capable of handling tens of millions of active daily users. In certain cases, a digital credit community and application platform may not work unless a critical mass of users is reached and therefore a platform that can handle very large numbers of users is paramount.
 
 ## Free Usage
 
-Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain digital credit community and application platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain digital credit community and application platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective decentralized digital credit strategies.
 
 ## Easy Upgrades and Bug Recovery
 
@@ -101,7 +101,7 @@ Credit evaluations obtained by creditors must be verifiable, so as to ensure the
 
 ## Community
 
-The community-based blockchain digital credit community and application platform can better guide its members to participate in the interaction and encourage their active participation in community contributions.
+The community-based blockchain digital credit community and application platform can better guide its members to participate active interactions and encourage their active participations in community contributions.
 
 ## Autonomy
 
@@ -109,14 +109,15 @@ The blockchain digital credit community and application platform need to achieve
 
 ## Distributed Storage, Persistent Storage, Immutability
 
-Through distributed, decentralized data storage, data is always stored, cannot be tampered with, and data is not lost due to unexpected events.
+Through distributed, decentralized data storage, data is always stored, cannot be tampered with, and data will not lost due to unexpected events.
 
 ## Default and Fraud Prevention, Loss Recovery
 
-In order to prevent default and fraudulent actions in blockchain digital credit applications, such as refusal to repay loans, project failure to perform, crowdfunding scams etc., the platform should establish preventive measures to reduce the risk of such events, once the default and fraud occurred. Can help the victims recover the losses, or minimize the losses of the victims.
+In order to prevent default and fraudulent actions in blockchain digital credit applications, such as refusal to repay loans, project failure to perform, crowdfunding scams etc., the platform should establish preventive measures to reduce the risk of such events, once the default and fraud occurred. Can help the funders recover the losses, or minimize the losses of the funders.
 
 ## Proactive Credit Assessment
 
-Unlike traditional passive credit assessment models, blockchain digital credit communities and application platforms should allow and encourage members to enhance their credit ratings through active, proven actions.
+Unlike traditional passive credit assessment models, blockchain digital credit communities and application platforms should allow and encourage members to improve their credit ratings through active, proven actions.
+
 
 
