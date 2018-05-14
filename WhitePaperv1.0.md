@@ -219,7 +219,7 @@ createdPost.transferTo(recycleBin);
 Or
 
 ```java
-Metadata.status = Metadata.OBSOLETED;
+metadata.status = Metadata.OBSOLETED;
 
 createdPost.transferTo(this, metadata);
 ```
@@ -286,9 +286,11 @@ Subclasses of Asset objects can declare their data's classifications and tags in
 post.metadata.categories.add(businessCategory);
 
 post.metadata.tags.add(financialTag);
+```
 
 Remove categories and tags:
 
+```java
 post.metadata.categories.remove(businessCategory);
 
 post.metadata.tags.remove(financialTag);
