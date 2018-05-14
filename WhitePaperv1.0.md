@@ -45,7 +45,7 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 2. In addition to passively accepting credit assessments, creditors must also be able to actively upgrade their credit rating through positive and meaningful actions.
 
-3. It is necessary to ensure a mechanism: when the creditor happens to disputes, fraudulency, etc., the loss of the contributor is minimized.
+3. It is necessary to ensure a mechanism: when the creditor happens to defaults and frauds, the loss of the contributor is minimized.
 
 4. Must ensure a mechanism: Encourage creditors to engage in positive, meaningful, valuable, positive actions, and not to do negative, meaningless, worthless, negative actions. (ie provide positive and negative feedbacks)
 
@@ -57,6 +57,66 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 In 2008, with the release of Bitcoin, blockchain technology began to be widely used by enterprises and developers. Blockchain technology makes it possible to create decentralized, trustworthy, immutable, secure, and objective applications.
 
+# Requirements for Blockchain Technology based Digital Credit Communities and Applications
 
+By using blockchain technology, it is possible to implement a decentralized community and application platform that can be comprehensive, objective, authentic, fair, and effective to assess the credit status of creditors. In order to gain widespread use, communities and applications require a platform that is flexible enough to meet the following requirements::
+
+## Support Millions of Users
+
+Competing with businesses like Facebook, Linkedin, Indeed, Freelancer, Upwork and Topcoder, require the blockchain digital credit community and application platform capable of handling tens of millions of active daily users. In certain cases, an digital credit community and application platform may not work unless a critical mass of users is reached and therefore a platform that can handle very large numbers of users is paramount.
+
+## Free Usage
+
+Application developers need the flexibility to offer users free services; users should not have to pay in order to use the platform or benefit from its services. A blockchain digital credit community and application platform that is free to use for users will likely gain more widespread adoption. Developers and businesses can then create effective monetization strategies.
+
+## Easy Upgrades and Bug Recovery
+
+Businesses building blockchain digital credit applications need the flexibility to enhance their applications with new features. The platform must support software and smart contract upgrades.
+
+All non-trivial software is subject to bugs, even with the most rigorous of formal verification. The platform must be robust enough to fix bugs when they inevitably occur.
+
+## Low Latency
+
+A good user experience demands reliable feedback with a delay of no more than a few seconds. Longer delays frustrate users and make applications built on a blockchain digital credit application platform less competitive with existing non-blockchain alternatives. The platform should support low latency of transactions.
+
+## High Performance
+
+In order to support high-frequency and large-scale data interactions, the blockchain digital credit community and application platform should be able to use concurrent computing, load balancing, multi-threading, multi-core CPU operations to improve the performance of application execution.
+
+## Openness
+
+To make it easier for developers and enterprises to develop applications using the blockchain digital credit application platform, the platform should be open enough to include: open source codes, documents, and related communities to answer various technologies problems faced by developers and enterprises.
+
+## Decentralization
+
+Decentralization is the core of blockchain applications and a distinguishing feature of traditional Internet applications and blockchain Internet applications. Only when digital credit communities and application platforms have truly achieved decentralization can they ensure the objectivity, fairness, openness, and immutability of their credit assessment.
+
+## Easy to Develop
+
+The blockchain digital credit application platform, if the development is very simple, will will likely gain more widespread adoption.
+
+## Verifiable
+
+Credit evaluations obtained by creditors must be verifiable, so as to ensure the objectivity, authenticity, and validity of the credit assessment.
+
+## Community
+
+The community-based blockchain digital credit community and application platform can better guide its members to participate in the interaction and encourage their active participation in community contributions.
+
+## Autonomy
+
+The blockchain digital credit community and application platform need to achieve self-government and encourage their members to engage in positive, meaningful, valuable, positive actions, not to do those negative, meaningless, worthless, negative actions.
+
+## Distributed Storage, Persistent Storage, Immutability
+
+Through distributed, decentralized data storage, data is always stored, cannot be tampered with, and data is not lost due to unexpected events.
+
+## Default and Fraud Prevention, Loss Recovery
+
+In order to prevent default and fraudulent actions in blockchain digital credit applications, such as refusal to repay loans, project failure to perform, crowdfunding scams etc., the platform should establish preventive measures to reduce the risk of such events, once the default and fraud occurred. Can help the victims recover the losses, or minimize the losses of the victims.
+
+## Proactive Credit Assessment
+
+Unlike traditional passive credit assessment models, blockchain digital credit communities and application platforms should allow and encourage members to enhance their credit ratings through active, proven actions.
 
 
