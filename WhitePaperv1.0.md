@@ -59,7 +59,7 @@ In 2008, with the release of Bitcoin, blockchain technology began to be widely u
 
 # Requirements for Blockchain Technology based Digital Credit Communities and Applications
 
-By using blockchain technology, it is possible to implement a decentralized community and application platform that can be comprehensive, objective, authentic, fair, and effective to assess the credit status of creditors. In order to gain widespread use, communities and applications require a platform that is flexible enough to meet the following requirements::
+By using blockchain technology, it is possible to implement a decentralized community and application platform that can be comprehensive, objective, authentic, fair, and effective to assess the credit status of creditors. In order to gain widespread use, communities and applications require a platform that is flexible enough to meet the following requirements:
 
 ## Support Millions of Users
 
