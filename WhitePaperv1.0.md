@@ -2,7 +2,7 @@
 
 **May 13, 2018**
 
-Bruce Zhang
+[Bruce Zhang](https://www.facebook.com/bruce.zhang.35762)
 
 digitalcreditio@outlook.com
 
