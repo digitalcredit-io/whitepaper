@@ -189,7 +189,8 @@ public class Post extends Asset {
 dMVC uses BigchainDB to implement decentralized database and data storage, and uses dOPA for encapsulation, simplifying data operations and storage functions. Taking dOPA's Java implementation of dJPA as an example, in dJPA, data is inherited from the Asset class and needs to be the Owner of the data. At the same time, the subclass of Asset can only perform two operations: create and transfer, and cannot perform update and delete similar to traditional relational databases.
 
 Taking the Post class of Example 1 as an example, when we need to create a Post class entity, we need to execute a statement similar to the following:
-<code>
+
+```java
 post.title = "Post Title";
 
 post.content = "Post Content";
@@ -199,27 +200,35 @@ post.owner = bob;
 post.metadata = metadata;//optional
 
 post createdPost = post.create();//post object has been created and persisted. the createdPost object now can obtain its transaction id by getTransactionID method.
-</code>
+```
 
 When we need to transfer the Post object to another role alice, we need to use the transfer method:
-<code>
+
+```java
 Post transferredPost = createdPost.transferTo(alice);
-</code>
+```
+
 In this way, the createdPost object no longer belongs to bob but belongs to alice.
 
 When bob no longer needs this post object, and he can't find another object to transfer, he can transfer the post object to the recycle bin: recycleBin, or transfer it to himself, but the mark post object has already been discarded.
-<code>
+
+```java
 createdPost.transferTo(recycleBin);
-</code>
+```
+
 Or
 
+```java
 Metadata.status = Metadata.OBSOLETED;
 
 createdPost.transferTo(this, metadata);
+```
 
 When bob needs to modify the post object, he needs to transfer the post object to himself, providing the modified post object as a parameter. By default, the system will use the current Timestamp as the post modification time.
 
+```java
 createdPost.transferTo(this,updatedPost, metadata);
+```
 
 **Note: When the type of stored data is a file, dOPA will store the file in the IPFS server rather than through BigchainDB.**
 
@@ -229,26 +238,37 @@ dOPA's data query is very similar to JPA, using dJPA as an example:
 
 Find objects by the transaction id:
 
+```java
 Post aPost=Post.findByTransactionID(transactionID);
+```
 
 Find the object by owner:
 
+```java
 List<Post> posts = Post.findByOwner(owner);
+```
 
 Find all the objects:
 
+```java
 List<Post> posts = Post.findAll();
+```
 
 You can also limit the number of lookups:
 
+```java
 List<Post> posts = Post.all().fetch(20);//fetch the first 20 result
+```
 
 Find by field:
 
+```java
 List<Post> posts = Post.find("byTitle", "My first post").fetch();
+```
 
 Finding via JPQL:
 
+```java
 List<Post> posts = Post.find(
     
     "select p from Post p, Comment c " +
@@ -256,11 +276,13 @@ List<Post> posts = Post.find(
     "where c.post = p and c.subject like ?", "%hop%"
     
 );
+```
 
 ## Tags and Categories
 
 Subclasses of Asset objects can declare their data's classifications and tags in metadata to facilitate querying. such as:
 
+```java
 post.metadata.categories.add(businessCategory);
 
 post.metadata.tags.add(financialTag);
@@ -270,6 +292,7 @@ Remove categories and tags:
 post.metadata.categories.remove(businessCategory);
 
 post.metadata.tags.remove(financialTag);
+```
 
 # Control
 
@@ -283,6 +306,7 @@ For example: http request:/posts?category=business
 
 We can have a Posts Action class that specifically handles post-related action classes:
 
+```java
 public class Posts extends Controller {
  
     Public static void getPostsByCategory(String category) {
@@ -294,6 +318,7 @@ public class Posts extends Controller {
     }
  
 }
+```
 
 ## Services
 
@@ -303,6 +328,7 @@ For example: http post:/postService
 
 Json:
 
+```json
 {'asset': {'data': {'post': {'title': 'new post',
 
     'content': 'post content'}}},
@@ -322,9 +348,11 @@ Json:
  'operation': 'CREATE'
  
  }
+ ```
  
  The server method:
  
+ ```java
  public static void handlePostService(String json) {
  
     Json requestJson = new Json(json);
@@ -350,3 +378,4 @@ Json:
     }    
     
 }
+```
