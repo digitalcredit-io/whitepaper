@@ -145,4 +145,14 @@ In the traditional software development process, the MVC pattern is widely used.
 
 In blockchain and decentralized, distributed application development, it is often necessary to develop a large number of underlying technologies, which are inefficient in development and cannot be applied to the efficiency and mode of modern software development. If distributed, decentralized blockchain application development is as intuitive and fast as some object-oriented languages, such as Java (JPA, Struts2), C#, and Ruby on Rails, it will be very beneficial for the development of blockchain applications.
 
+# dMVC framework (Decentralized Model-View-Control)
+
+The dMVC framework is designed and developed for [digitalcredit.io](http://digitalcredit.io) and is mainly used in an application development framework for the Digital Credit application platform. Decentralized distributed application development encapsulation and simplification is as simple and intuitive as using Java, C#, and Ruby on Rails to develop applications using the MVC framework.
+
+dMVC will implement a cloud application development platform and a localized application development platform. The cloud application development platform is similar to Ethereum's smart contract platform: developers only need to upload code (Model layer, View layer and Control layer), and can publish their blockchain digital credit application in the cloud without setting up a development environment. Local application development platform, developers build development environment (such as using Docker), and develop digital credit applications locally.
+
+dMVC will support mainstream application development languages such as: Java, Javascript, Python, Go, PHP, C#, C/C++.
+
+**Note: In the original version, dMVC may only support certain languages such as Java, Javascript, and Python.**
+
 
