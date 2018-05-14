@@ -41,7 +41,7 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 ## The keys to solve problems of current credit system
 
-1. It must be able to ensure the objectivity, authenticity, and immutability of creditors credit rating evaluation, and can fully assess the credibility of creditors.
+1. It must be able to ensure the objectivity, authenticity, and immutability of evaluations of creditors' credit rating, and can fully assess the credibility of creditors.
 
 2. In addition to passively accepting credit assessments, creditors must also be able to actively upgrade their credit rating through positive and meaningful actions.
 
@@ -49,8 +49,10 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 4. Must ensure a mechanism: Encourage creditors to engage in positive, meaningful, valuable, positive actions, and not to do negative, meaningless, worthless, negative actions. (ie provide positive and negative feedbacks)
 
-5. It is necessary to ensure a mechanism: the credit status of creditors and records of credit actions will be permanently stored and cannot be changed; credit platforms will not lose or be tampered with due to hacker attacks, system failures or natural disasters.
+5. It is necessary to ensure a mechanism: the credit status of creditors and the records of credit actions will be permanently stored and cannot be changed; credit platforms will not lose or be tampered with due to hacker attacks, system failures or natural disasters.
 
 6. It is necessary to ensure a mechanism: the evaluation of the credibility of creditors will not be affected by external factors such as their region, race, country, religion, wealth, social level, social identity, etc., and it is absolutely authentic, objective, fair and trustworthy.
+
+
 
 
