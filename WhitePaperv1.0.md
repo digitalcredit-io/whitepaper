@@ -405,11 +405,49 @@ The account can represent individuals, ie. the personal accounts. The account ca
 
 There is a correlation between personal accounts, application accounts, action accounts, and group accounts. For example, membership: @Bob and Alice are members of @CompanyA; contractual relationship: @Bob has a two-year work contract with @CompanyA; affiliation: @DCLending and @DCcompetition belong to @CompanyC, etc.
 
-### Authority Management
+### Permission Managements
 
 Accounts can manage permissions for account actions. Account privileges can be assigned to a range of personal accounts, application accounts, or group accounts. Digital Credit manages account permissions by setting account weights and account action thresholds.
 
 The following example is referenced in EOS.IO:
 
 <img align="center" src="https://github.com/digitalcredit-io/whitepaper/blob/master/eos%20permission.jpg" />
+
+In this example, the @multisig account has three account action permissions: owner, active, and publish. The account of the owner permission is @bob and @stacy. The weight value of each account is 1, and the threshold of owner permission is 2. This means that once you want to obtain the owner permission of the @multisig account, both @bob and @stacy are required to issue permissions. The active threshold is 1, and both @bob and @stacy have a weight of 1, which means that only one person, @bob or @stacy, is required to issue permission.
+
+### Identity Verification
+
+In Digital Credit, certain actions require participants to process identity verification. Identity verification mainly guarantees the authenticity of the participants' identities. Make sure the account holder does not create multiple trumpet for the same person and affects the fairness and objectivity of certain actions.
+
+### Account Data
+
+The naming convention for data access in the account is @+account name+(.+ account data fields, which can be multi-level nested).
+Example: @bob.skills.English = B, indicating bob's English skill level is B.
+
+The account owner can independently open/close status of his/her own account data, and can open certain account data for friends, groups, applications or actions. When an account uses an application or joins an activity, the application account or action account will require the account user or participant to grant permissions to certain data access privileges.
+
+Account data permissions are: NA (unavailable), R (read only), RW (read and write), W (write only).
+
+One example:
+When @bob uses an application called competitionApp, the @competitionApp account requires @bob open permission:
+
+@bob.skills.Java read and write
+
+@bob.competition read and write
+
+@bob.credit read and write
+
+@bob.groups read
+
+@bob can use the competitionApp after @bob has confirmed the @competitionApp access request. @bob will not be able to use the competitionApp if @bob disagrees with any one of the requests.
+
+## Role and Organization Management
+
+Each account can belong to an organization, such as @bob, @stacy and @alice belong to a team @teamA, where @bob is the Team Leader, so when you get @bob.role.teamA, return The value should be "Team Leader."
+
+For an organization, you can define a lot of actions and permissions. For details, refer to the [Rights Management](#permission-managements) section.
+
+For example: @bob's role in @teamA is both the Team Leader and Reviewer, and @stacy is the Reviewer in TeamA. Then when @alice submits a proposal for review, it needs to be reviewed by both @bob and @stacy before it can be passed.
+
+In the self-organizing management of Digital Credit, Digital Credit will establish a mechanism to encourage community members to actively participate in the community to contribute to higher authority organizational roles. For example, after a member whose contribution exceeds a certain number and his/her related ability meets the standard, Digital Credit can automatically promote the member's role to Reviewer. Reviewer is more privileged than the regular member and can review the content posted by the regular member. (Like traditional BBS forum managements, forum administrators can assign permissions to different sections, such as assigning moderators, etc.)
 
