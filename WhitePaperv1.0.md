@@ -445,7 +445,7 @@ When @bob uses an application called competitionApp, the @competitionApp account
 
 Each account can belong to an organization, such as @bob, @stacy and @alice belong to a team @teamA, where @bob is the Team Leader, so when you get @bob.role.teamA, return The value should be "Team Leader."
 
-For an organization, you can define a lot of actions and permissions. For details, refer to the [Rights Management](#permission-managements) section.
+For an organization, you can define a lot of actions and permissions. For details, refer to the [Permission Managements](#permission-managements) section.
 
 For example: @bob's role in @teamA is both the Team Leader and Reviewer, and @stacy is the Reviewer in TeamA. Then when @alice submits a proposal for review, it needs to be reviewed by both @bob and @stacy before it can be passed.
 
