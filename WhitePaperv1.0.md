@@ -155,4 +155,28 @@ dMVC will support mainstream application development languages such as: Java, Ja
 
 **Note: In the original version, dMVC may only support certain languages such as Java, Javascript, and Python.**
 
+# Model
+
+dMVC will simplify the data model part of blockchain applications. The data model part of dMVC will be similar to JPA (Java Persistence API), that is, developers can create data entities and mappings as easily as creating and processing Java classes.
+
+## Data Structure
+
+The data structure of the model layer in dMVC is very similar to the Java language object. At the same time, dMVC will implement an entity mapping interface similar to JPA in Java: dOPA, namely: Decentralized Object Persistence API). Taking Java as an example, dOPA will implement a Java version of the API, the Decentralized Java Persistence API. The Java version of dJPA will use annotations to implement the mapping between objects and entities.
+
+Example 1:
+
+@Entity
+public class Post extends Asset {
+
+    public String title;
+    public String content;
+    public Date postDate;
+
+    @ManyToOne
+    public Author author;
+
+    @OneToMany
+    public List<Comment> comments;
+}
+
 
