@@ -9,7 +9,7 @@ digitalcreditio@outlook.com
 [digitalcredit.io](http://digitalcredit.io)
 
 
-**Abstract:** Digital Credit is designed using a brand new blockchain architecture by creating a decentralized, verifiable digital credit community and application platform, based on challenge, competition, test, teaching, posting, ranking, achievement, contribution, review and voting, by implementing POA (Proof of Ability), digital credit evaluation and digital credit actions for members in the community to create a decentralized, trustworthy, easy to use, immutable, autonomous digital credit community and application platform. Digital Credit simplifies the blockchain application development and implements a distributed, decentralized MVC framework: dMVC (decentralized Model-View-Control), which includes: model part: data structure, database and data storage; control part : actions, services, account management, role and organization management, tags and categories; Proof of Ability Actions, including: challenge, competition, test, contribution, teaching, post, ranking, achievement, review, voting, etc. ; digital credit evaluations, digital credit actions (including awarding rewards, issuing loans, approving crowdfunding, allowing sales of tickets, etc.), tokens and smart contracts, and dispute resolutions; Views: Clients, etc. This allows the creation of distributed, decentralized, authentic, trustworthy, easy to develop, immutable, safe, objective, fair, autonomous, digital credit community and applications based on POA.
+**Abstract:** Digital Credit is designed using a brand new blockchain architecture by creating a decentralized, verifiable digital credit community and application platform, based on challenge, competition, test, teaching, posting, ranking, achievement, contribution, review and voting, by implementing POA (Proof of Ability), digital credit evaluation and digital credit actions for members in the community to create a decentralized, trustworthy, easy to use, immutable, autonomous digital credit community and application platform. Digital Credit simplifies the blockchain application development and implements a distributed, decentralized MVC framework: dMVC (decentralized Model-View-Control), which includes: model part: data structure, database and data storage; control part : actions, services, account management, role and organization management, tags and categories; Proof of Ability Actions, including: challenge, competition, test, contribution, teaching, post, ranking, achievement, review, voting, etc. ; digital credit evaluations, digital credit actions (including awarding rewards, issuing loans, approving crowdfunding, allowing sales of tickets, etc.), tokens and smart contracts, and dispute resolutions; Views: Clients, etc. This allows the creation of distributed, decentralized, authentic, trustworthy, easy to develop, immutable, safe, objective, fair, autonomous, digital credit communities and applications based on POA.
 
 **PLEASE NOTE: CRYPTOGRAPHIC TOKENS(Digital Credit, DGCT) REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS IN TWO VERSIONS: 1. CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN BASED ON EOS.IO. 2. ERC-20 COMPATIBLE CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN BASED ON ETHEREUM. ERC-20 COMPATIBLE TOKENS(Digital Credit, DGCT) BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN WILL BE APPLICABLE TO A DIGITAL CREDIT SOLUTION THAT IS COMPATIBLE WITH ETHEREUM: ULTILIZE ETHEREUM TO IMPLEMENT TOKES AND SMART CONTRACTS, ULTILIZE DMVC TO IMPLEMENT OTHER DIGITAL CREDIT FEATURES. MORE DETAILS CAN BE FOUND IN THE [COMPATIBILITY](#compatibility) SECTION.**
 
@@ -45,11 +45,11 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 2. In addition to passively accepting credit assessments, creditors must also be able to actively upgrade their credit rating through positive and meaningful actions.
 
-3. It is necessary to ensure a mechanism: when the creditor happens to defaults and frauds, the loss of the contributor is minimized.
+3. It is necessary to ensure a mechanism: when the creditor happens to defaults and frauds, the loss of the funder is minimized.
 
 4. Must ensure a mechanism: Encourage creditors to engage in positive, meaningful, valuable, positive actions, and not to do negative, meaningless, worthless, negative actions. (ie provide positive and negative feedbacks)
 
-5. It is necessary to ensure a mechanism: the credit status of creditors and the records of credit actions will be permanently stored and cannot be changed; credit platforms will not lose or be tampered with due to hacker attacks, system failures or natural disasters.
+5. It is necessary to ensure a mechanism: The credit status of creditors and the records of credit actions will be permanently stored and cannot be changed; credit platforms will not lose or be tampered with due to hacker attacks, system failures or natural disasters.
 
 6. It is necessary to ensure a mechanism: the evaluation of the credibility of creditors will not be affected by external factors such as their region, race, country, religion, wealth, social level, social identity, etc., and it is absolutely authentic, objective, fair and trustworthy.
 
@@ -89,7 +89,7 @@ To make it easier for developers and enterprises to develop applications using t
 
 ## Decentralization
 
-Decentralization is the core of blockchain applications and a distinguishing feature of traditional Internet applications and blockchain Internet applications. Only when digital credit communities and application platforms have truly achieved decentralization can they ensure the objectivity, fairness, openness, and immutability of their credit assessment.
+Decentralization is the core of blockchain applications and a distinguishing feature between traditional Internet applications and blockchain Internet applications. Only when digital credit communities and application platforms have truly achieved decentralization can they ensure the objectivity, fairness, openness, and immutability of their credit assessment.
 
 ## Easy to Develop
 
@@ -113,7 +113,7 @@ Through distributed, decentralized data storage, data is always stored, cannot b
 
 ## Default and Fraud Prevention, Loss Recovery
 
-In order to prevent default and fraudulent actions in blockchain digital credit applications, such as refusal to repay loans, project failure to perform, crowdfunding scams etc., the platform should establish preventive measures to reduce the risk of such events, once the default and fraud occurred. Can help the funders recover the losses, or minimize the losses of the funders.
+In order to prevent default and fraudulent actions in blockchain digital credit applications, such as refusal to repay loans, project failure to perform, crowdfunding scams etc., the platform should establish preventive measures to reduce the risk of such events, once the default and fraud occurred, the platform can help the funders recover the losses, or minimize the losses.
 
 ## Proactive Credit Assessment
 
@@ -123,21 +123,21 @@ Unlike traditional passive credit assessment models, blockchain digital credit c
 
 The token and transaction portion of Digital Credit will be based on the well-known, decentralized, blockchain consensus algorithm [DPOS](https://bitshares.org/technology/delegated-proof-of-stake-consensus/) (Delegated Proof of Stake) and can implement [BFT](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance) ( Byzantine Fault-Tolerant, Byzantine Fault Tolerance). Different from POW (Proof of Work) consensus algorithm, this consensus algorithm can ensure the decentralization of blockchain applications while ensuring the high performance of blockchain applications.
 
-**Note: In order to develop Digital Credit community and application platform more effective, speed up the launching progress, and improve transaction performance, Digital Credit 1.0 will utilize [EOS.IO](https://eos.io/) to implement tokens and tokens transactions, smart contracts, account management, role management and other features. Data storage development will be based on [Tendermint](https://www.tendermint.com/) and [BigchainDB](https://www.bigchaindb.com/). The use of BigchainDB's decentralized and distributed database simplifies and encapsulates blockchain application development and creates an efficient, high-performance blockchain digital credit community and application platform.**
+**Note: In order to develop Digital Credit community and application platform more effective, speed up the launching progress, and improve transaction performance, Digital Credit 1.0 will utilize [EOS.IO](https://eos.io/) to implement tokens and tokens transactions, smart contracts, account management, role management and some other features. Data storage development will be based on [Tendermint](https://www.tendermint.com/) and [BigchainDB](https://www.bigchaindb.com/). The use of BigchainDB's decentralized and distributed database simplifies and encapsulates blockchain application development and can create an efficient, high-performance blockchain digital credit community and application platform.**
 
 **Note: Digital Credit will utilize [IPFS](https://ipfs.io/) to store files.**
 
 # Compatibility
 
-With the popularity of the blockchain concept, more and more blockchain applications are being built on existing mature platforms such as Ethereum and Bitcoin. Thousands of blockchain and smart contract applications are built on these platforms. If it can achieve compatibility with these existing blockchain platforms, it will attract more blockchain developers to develop blockchain applications based on Digital Credit, which will have a very positive effect on the development of Digital Credit.
+With the popularity of the blockchain concept, more and more blockchain applications are being built on existing mature platforms such as Ethereum and Bitcoin. Thousands of blockchain and smart contract applications are built on these platforms. If the digital credit community and application platform can achieve compatibility with these existing blockchain platforms, it will attract more blockchain developers to develop blockchain applications based on Digital Credit, which will have a very positive effect.
 
-Digital Credit 1.0 will use EOS.IO to implement functions such as tokens, token transactions, account management, role management, and smart contracts, and these functions will be encapsulated with dMVC. Therefore, the standard version of Digital Credit will be based on the DPOS consensus algorithm powered by EOS.IO (for tokens and smart contracts). Digital Credit 1.0 can also be called Digital Credit EOS.IO.
+Digital Credit 1.0 will utilize EOS.IO to implement functions such as tokens, token transactions, account management, role management, and smart contracts, and these functions will be encapsulated with dMVC. Therefore, the standard version of Digital Credit will be based on the DPOS consensus algorithm powered by EOS.IO (for tokens and smart contracts). Digital Credit 1.0 can also be called Digital Credit EOS.IO.
 
-At the same time, Digital Credit will also implement compatibility solutions for other blockchain platforms, namely: using the tokens and smart contracts of existing blockchain platforms to implement the functions of digital credits, and using dMVC to implement Digital Credit other features.
+At the same time, Digital Credit will also implement compatibility solutions for other blockchain platforms, namely: using the tokens and smart contracts of existing blockchain platforms, and using dMVC to implement Digital Credit other features.
 
 For example, Digital Credit will launch an Ethereum-compatible version of Ethereum that uses Ethereum's tokens and smart contracts, and uses dMVC to implement other Digital Credit functions, namely: Digital Credit Ethereum. Bitcoin compatible version will also be introduced, namely: Digital Credit Bitcoin and so on. Other compatible versions will be selectively developed based on the influence and acceptance of relevant blockchain platforms.
 
-In the compatible version, such as Digital Credit Ethereum, tokens and smart contracts for the entire platform are developed based on Ethereum, while the remaining functions are based on dMVC, such as: database and data storage, control (account management, role and organization management, POAs: challenges, competitions, tests, contributions, learnings, posts, rankings, achievements, reviews, votings, digital credit assessments, digital credit credit actions, etc.), user view features. When certain functions of Digital Credit need to be completed based on tokens and smart contracts features, for example, members of the Digital Credit application need to initiate an ICO crowdfunding, then the crowdfunding tokens are not initiated by EOS.IO but by the Ethereum platform. Another example: members of the Digital Credit application need to apply for a loan. If the loan is approved, the credit for the member to obtain the loan defaults from Ethereum, ERC-20-compliant, Digital Credit (DGCT). After Digital Credit is released, Digital Credit (DGCT) released by the official version of Digital Credit (non-compatible version) will be exchanged with ERC-20 compliant Digital Credit (DGCT) released by Ethereum. Users of Digital Credit can flexibly switch the tokens used to settle, trade, and run smart contracts when using the Digital Credit main program.
+In the compatible version, such as Digital Credit Ethereum, tokens and smart contracts for the entire platform are developed based on Ethereum, while the remaining functions are based on dMVC, such as: database and data storage, control (account management, role and organization management, POAs: challenges, competitions, tests, contributions, learnings, posts, rankings, achievements, reviews, votings, digital credit assessments, digital credit credit actions, etc.), user view features. When certain functions of Digital Credit need to be completed based on tokens and smart contracts features, for example, members of the Digital Credit application need to initiate an ICO crowdfunding, then the crowdfunding tokens are  initiated by Ethereum platform other than EOS.IO. Another example: members of the Digital Credit application need to apply for a loan. If the loan is approved, the credit tokens for the member to obtain is from Ethereum, ERC-20-compliant, Digital Credit (DGCT). After Digital Credit is released, Digital Credit (DGCT) released by the official version of Digital Credit (standard EOS.IO version) will be exchanged with ERC-20 compliant Digital Credit (DGCT) released by Ethereum. Users of Digital Credit can flexibly switch the tokens used to settle, trade, and run smart contracts when using the Digital Credit main program.
 
 # Design Patterns
 
@@ -147,13 +147,13 @@ In blockchain and decentralized, distributed application development, it is ofte
 
 # dMVC framework (Decentralized Model-View-Control)
 
-The dMVC framework is designed and developed for [digitalcredit.io](http://digitalcredit.io) and is mainly used in an application development framework for the Digital Credit application platform. Decentralized distributed application development encapsulation and simplification is as simple and intuitive as using Java, C#, and Ruby on Rails to develop applications using the MVC framework.
+The dMVC framework is designed and developed for [digitalcredit.io](http://digitalcredit.io) and is mainly used in an application development framework for the Digital Credit application platform. Development of decentralized distributed application is encapsulated and simplified as simple and intuitive as using Java, C#, and Ruby on Rails to develop applications using the traditional MVC framework.
 
-dMVC will implement a cloud application development platform and a localized application development platform. The cloud application development platform is similar to Ethereum's smart contract platform: developers only need to upload code (Model layer, View layer and Control layer), and can publish their blockchain digital credit application in the cloud without setting up a development environment. Local application development platform, developers build development environment (such as using Docker), and develop digital credit applications locally.
+dMVC will implement a cloud application development platform and a localized application development platform. The cloud application development platform is similar to Ethereum's smart contract platform: developers only need to upload code (Model layer, View layer and Control layer), and can publish their blockchain digital credit application in the cloud without setting up a development environment. By using the localized application development platform, developers should build local development environment (such as using Docker), and develop digital credit applications locally.
 
 dMVC will support mainstream application development languages such as: Java, Javascript, Python, Go, PHP, C#, C/C++.
 
-**Note: In the original version, dMVC may only support certain languages such as Java, Javascript, and Python.**
+**Note: In the early lauched version, dMVC may only support certain languages such as Java, Javascript, and Python.**
 
 # Model
 
@@ -161,7 +161,7 @@ dMVC will simplify the data model part of blockchain applications. The data mode
 
 ## Data Structure
 
-The data structure of the model layer in dMVC is very similar to the Java language object. At the same time, dMVC will implement an entity mapping interface similar to JPA in Java: dOPA, namely: Decentralized Object Persistence API). Taking Java as an example, dOPA will implement a Java version of the API, the Decentralized Java Persistence API. The Java version of dJPA will use annotations to implement the mapping between objects and entities.
+The data structure of the model layer in dMVC is very similar to the Java language object. At the same time, dMVC will implement an entity mapping interface similar to JPA in Java: dOPA(Decentralized Object Persistence API). Taking Java as an example, dOPA will implement a Java version of the API:dJPA(Decentralized Java Persistence API). The Java version of dJPA will use annotations to implement the mapping between objects and entities.
 
 Example 1:
 
