@@ -210,7 +210,7 @@ Post transferredPost = createdPost.transferTo(alice);
 
 In this way, the createdPost object no longer belongs to bob but belongs to alice.
 
-When bob no longer needs this post object, and he can't find another object to transfer, he can transfer the post object to the recycle bin: recycleBin, or transfer it to himself, but the mark post object has already been discarded.
+When bob no longer needs this post object, however, he can't find another object to transfer, then he can transfer the post object to the recycle bin: recycleBin, or transfer it to himself, but to mark that the post object has already been discarded.
 
 ```java
 createdPost.transferTo(recycleBin);
@@ -230,7 +230,7 @@ When bob needs to modify the post object, he needs to transfer the post object t
 createdPost.transferTo(this,updatedPost, metadata);
 ```
 
-**Note: When the type of stored data is a file, dOPA will store the file in the IPFS server rather than through BigchainDB.**
+**Note: When the type of stored data is a file, dOPA will store the file in the IPFS rather than through BigchainDB.**
 
 ## Data Query
 
@@ -254,7 +254,7 @@ Find all the objects:
 List<Post> posts = Post.findAll();
 ```
 
-You can also limit the number of lookups:
+You can also limit the fetch result number:
 
 ```java
 List<Post> posts = Post.all().fetch(20);//fetch the first 20 result
@@ -324,7 +324,7 @@ public class Posts extends Controller {
 
 ## Services
 
-Services are somewhat similar to the web service in Java, through the json to achieve data interaction between the client and server.
+Services are somewhat similar to the RESTful Services in Java, through the json to achieve data interaction between the client and server.
 
 For example: http post:/postService
 
@@ -385,19 +385,19 @@ Json:
 
 ### Account Name
 
-The maximum length of the account name of Digital Credit is 12 characters (Chinese character occupy 2 characters, if the account name is all Chinese, up to 6 Chinese characters are supported). 12 characters including English characters (a-z, A-Z), numbers (0-9), underscore (_), underscore (-), UTF-8 encoded characters of other countries (eg Simplified Chinese, Traditional Chinese, Japanese, Korean, etc.)
+The maximum length of the account name of Digital Credit is 12 characters (Chinese character will occupy 2 characters, if the account name is all Chinese, up to 6 Chinese characters are supported). 12 characters including English characters (a-z, A-Z), numbers (0-9), underscore (_), underscore (-), UTF-8 encoded characters of other countries (eg Simplified Chinese, Traditional Chinese, Japanese, Korean, etc.)
 
-When creating an account, Digital Credit will detect the name of the account in order to avoid content such as verbal abuse, language intrusion, discrimination, verbal violence, and political infringement.
+When creating an account, Digital Credit will detect the name of the account in order to avoid violated content such as verbal abuse, language intrusion, discrimination, verbal violence, and political infringement.
 
 ### Account Actions
 
-The account can perform some account-related actions, such as open/hide account owner's digital credit information, competition results, skill information, and so on. The application of Digital Credit may require the account owner to open certain rights to run a digital credit application. For example, an online loan application requires the account owner to show the digital credit record for the application, or a software development competition application that requires the account owner to show information about the skill information and program development-related skills to the application; or An ICO, crowdfunding application requires crowdfunders to show information about the relevant skills they describe.
+The account can perform some account-related actions, such as open/hide account owner's digital credit information, competition results, skill information, and so on. The application of Digital Credit may require the account owner to open certain rights to run a digital credit application. For example, an online loan application requires the account owner to show the digital credit record for the application, or a software development competition application that requires the account owner to show information about the skill information and program development-related skills to the application; or an ICO, crowdfunding application requires crowdfunders to show information about the relevant skills they have described.
 
-The account owner can choose to grant permissions to certain actions of certain applications or some other account (such as a friend).
+The account owner can choose to grant permissions to certain actions, applications or some other accounts (such as friends).
 
 ### Friends, Whitelists, Blacklists, and Groups
 
-The account owner can add other accounts as friends, or add to whitelist, blacklist, or a group. To perform certain actions in batches, such as setting up their own digital credit information that only friends are visible, or only certain applications are visible.
+The account owner can add other accounts as friends, or add other accounts to whitelist, blacklist, or a group to perform certain actions in batches, such as setting up their own digital credit information that only friends are visible, or only certain applications are visible.
 
 ### Personal Account, Application Account, Action Account and Group Account
 
@@ -417,19 +417,20 @@ In this example, the @multisig account has three account action permissions: own
 
 ### Identity Verification
 
-In Digital Credit, certain actions require participants to process identity verification. Identity verification mainly guarantees the authenticity of the participants' identities. Make sure the account holder does not create multiple trumpet for the same person and affects the fairness and objectivity of certain actions.
+In Digital Credit, certain actions require participants to process identity verification. Identity verification mainly guarantees the identity authenticity of the participants, to make sure the account holder does not create multiple trumpet for the same person and affects the fairness and objectivity of certain actions.
 
 ### Account Data
 
 The naming convention for data access in the account is @+account name+(.+ account data fields, which can be multi-level nested).
 Example: @bob.skills.English = B, indicating bob's English skill level is B.
 
-The account owner can independently open/close status of his/her own account data, and can open certain account data for friends, groups, applications or actions. When an account uses an application or joins an activity, the application account or action account will require the account user or participant to grant permissions to certain data access privileges.
+The account owner can independently open/close permissions of his/her own account data, and can open certain account data for friends, groups, applications or actions. When an account uses an application or perform a POA action, the application account or action account will require the account user or participant to grant permissions to certain data access privileges.
 
 Account data permissions are: NA (unavailable), R (read only), RW (read and write), W (write only).
 
 One example:
-When @bob uses an application called competitionApp, the @competitionApp account requires @bob open permission:
+
+When @bob uses an application called competitionApp, the @competitionApp account requires @bob to open permissions:
 
 @bob.skills.Java read and write
 
@@ -439,15 +440,15 @@ When @bob uses an application called competitionApp, the @competitionApp account
 
 @bob.groups read
 
-@bob can use the competitionApp after @bob has confirmed the @competitionApp access request. @bob will not be able to use the competitionApp if @bob disagrees with any one of the requests.
+@bob can use the competitionApp after @bob has confirmed all of the @competitionApp access requests. @bob will not be able to use the competitionApp if @bob disagrees with any one of the requests.
 
 ## Role and Organization Management
 
-Each account can belong to an organization, such as @bob, @stacy and @alice belong to a team @teamA, where @bob is the Team Leader, so when you get @bob.role.teamA, the return value should be "Team Leader."
+Each account can belong to an organization, such as @bob, @stacy and @alice belong to a team @teamA, where @bob is the "Team Leader", so when you get @bob.role.teamA, the return value should be "Team Leader."
 
-For an organization, you can define a lot of actions and permissions. For details, refer to the [Permission Management](#permission-management) section.
+In an organization, you can define a lot of actions and permissions. For details, refer to the [Permission Management](#permission-management) section.
 
-For example: @bob's role in @teamA is both the Team Leader and Reviewer, and @stacy is the Reviewer in TeamA. Then when @alice submits a proposal for review, it needs to be reviewed by both @bob and @stacy before it can be passed.
+For example: @bob's role in @teamA is both the "Team Leader" and "Reviewer", and @stacy is the "Reviewer" in TeamA. Then when @alice submits a proposal for review, it needs to be reviewed by both @bob and @stacy before it can be passed.
 
-For the self-organizing management purpose, Digital Credit will establish a mechanism to encourage community members to actively participate in the community to contribute to get higher organizational roles. For example, when a member whose contribution reached a certain level and his/her related ability meets the standard, Digital Credit can automatically promote the member's role to Reviewer. Reviewer is more privileged than the regular member and can review the content posted by the regular member. (Like traditional BBS forum management, forum administrators can assign permissions to different sections, such as assigning moderators, etc.)
+For the self-organizing management purpose, Digital Credit will establish a mechanism to encourage community members to actively participate in the community to contribute to get higher organizational roles. For example, when a member whose contribution reached a certain level and his/her related ability meets the standard at the same time, Digital Credit can automatically promote the member's role to Reviewer. Reviewer is more privileged than the regular member and can review the content posted by the regular member. (Like traditional BBS forum management, forum administrators can assign permissions to different sections, such as assigning moderators, etc.)
 
