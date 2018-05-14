@@ -328,7 +328,7 @@ For example: http post:/postService
 
 Json:
 
-```json
+```javascript
 {'asset': {'data': {'post': {'title': 'new post',
 
     'content': 'post content'}}},
