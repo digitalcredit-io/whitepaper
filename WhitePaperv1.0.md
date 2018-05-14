@@ -381,3 +381,35 @@ Json:
     
 }
 ```
+## Account Managements
+
+### Account Name
+
+The maximum length of the account name of Digital Credit is 12 characters (Chinese character occupy 2 characters, if the account name is all Chinese, up to 6 Chinese characters are supported). 12 characters including English characters (a-z, A-Z), numbers (0-9), underscore (_), underscore (-), UTF-8 encoded characters of other countries (eg Simplified Chinese, Traditional Chinese, Japanese, Korean, etc.)
+
+When creating an account, Digital Credit will detect the name of the account in order to avoid content such as verbal abuse, language intrusion, discrimination, verbal violence, and political infringement.
+
+### Account Actions
+
+The account can perform some account-related actions, such as open/hide account owner's digital credit information, competition results, skill information, and so on. The application of Digital Credit may require the account owner to open certain rights to run a digital credit application. For example, an online loan application requires the account owner to show the digital credit record for the application, or a software development contest application that requires the account owner to show information about the skill information and program development-related skills to the application; or An ICO, crowdfunding application requires crowdfunders to show information about the relevant skills they describe.
+
+The account owner can choose to grant permissions to certain actions of certain applications or some other account (such as a friend).
+
+### Friends, Whitelists, Blacklists, and Groups
+
+The account owner can add other accounts as friends, or add to whitelist, blacklist, or a group. To perform certain actions in batches, such as setting up their own digital credit information that only friends are visible, or only certain applications are visible.
+
+### Personal Account, Application Account, Action Account and Group Account
+
+The account can represent individuals, ie. the personal accounts. The account can also represent the application, ie. the application account. The account can also represent a series of individual accounts or application accounts or a collection of action accounts or group accounts. For example, there are four personal accounts: @Bob, @Alice, @Tom, @Cathy, there is an application account: @DCLending and action account: @DCcompetition. Among them, @Bob and @Alice formed a company @CompanyA, then @CompanyA is the company account; @Tom and @Cathy formed a company @CompanyB. @CompanyA and @CompanyB and @DCLending belong to the parent company @CompanyC.
+
+There is a correlation between personal accounts, application accounts, action accounts, and group accounts. For example, membership: @Bob and Alice are members of @CompanyA; contractual relationship: @Bob has a two-year work contract with @CompanyA; affiliation: @DCLending and @DCcompetition belong to @CompanyC, etc.
+
+### Authority Management
+
+Accounts can manage permissions for account actions. Account privileges can be assigned to a range of personal accounts, application accounts, or group accounts. Digital Credit manages account permissions by setting account weights and account action thresholds.
+
+The following example is referenced in EOS.IO:
+
+<img align="center" src="https://github.com/digitalcredit-io/whitepaper/blob/master/eos%20permission.jpg" />
+
