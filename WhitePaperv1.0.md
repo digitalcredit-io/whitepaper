@@ -184,11 +184,11 @@ public class Post extends Asset {
 dMVC uses BigchainDB to implement decentralized database and data storage, and uses dOPA for encapsulation, simplifying data operations and storage functions. Taking dOPA's Java implementation of dJPA as an example, in dJPA, data is inherited from the Asset class and needs to be the Owner of the data. At the same time, the subclass of Asset can only perform two operations: create and transfer, and cannot perform update and delete similar to traditional relational databases.
 
 Taking the Post class of Example 1 as an example, when we need to create a Post class entity, we need to execute a statement similar to the following:
-Post.title = "Post Title";
-Post.content = "Post Content";
-Post.owner = bob;
-Post.metadata = metadata;//optional
-Post createdPost = post.create();//post object has been created and persisted. the createdPost object now can obtain its transaction id by getTransactionID method.
+post.title = "Post Title";
+post.content = "Post Content";
+post.owner = bob;
+post.metadata = metadata;//optional
+post createdPost = post.create();//post object has been created and persisted. the createdPost object now can obtain its transaction id by getTransactionID method.
 
 When we need to transfer the Post object to another role alice, we need to use the transfer method:
 Post transferredPost = createdPost.transferTo(alice);
@@ -205,4 +205,90 @@ createdPost.transferTo(this,updatedPost, metadata);
 
 **Note: When the type of stored data is a file, dOPA will store the file in the IPFS server rather than through BigchainDB.**
 
+## Data Query
 
+dOPA's data query is very similar to JPA, using dJPA as an example:
+
+Find objects by the transaction id:
+Post aPost=Post.findByTransactionID(transactionID);
+
+Find the object by owner:
+List<Post> posts = Post.findByOwner(owner);
+
+Find all the objects:
+List<Post> posts = Post.findAll();
+
+You can also limit the number of lookups:
+List<Post> posts = Post.all().fetch(20);//fetch the first 20 result
+
+Find by field:
+List<Post> posts = Post.find("byTitle", "My first post").fetch();
+
+Finding via JPQL:
+List<Post> posts = Post.find(
+    "select p from Post p, Comment c " +
+    "where c.post = p and c.subject like ?", "%hop%"
+);
+
+## Tags and Categories
+
+Subclasses of Asset objects can declare their data's classifications and tags in metadata to facilitate querying. such as:
+post.metadata.categories.add(businessCategory);
+post.metadata.tags.add(financialTag);
+
+Remove categories and tags:
+post.metadata.categories.remove(businessCategory);
+post.metadata.tags.remove(financialTag);
+
+# Control
+
+dMVC provides two control methods: one is Actions, which mainly deals with http request and http post; and the other is Services, which mainly uses json to perform data interaction between client and server.
+
+## Actions
+
+Actions is a bit similar to Struts/Struts2 in Java. It handles related behaviors by parsing user http requests and http posts.
+
+For example: http request:/posts?category=business
+We can have a Posts Action class that specifically handles post-related action classes:
+public class Posts extends Controller {
+ 
+    Public static void getPostsByCategory(String category) {
+        List <Posts posts = Post.findByCategory(category);
+        render(posts);
+    }
+ 
+}
+
+## Services
+
+Services are somewhat similar to the web service in Java, through the json to achieve data interaction between the client and server.
+
+For example: http post:/postService
+Json:
+{'asset': {'data': {'post': {'title': 'new post',
+    'content': 'post content'}}},
+ 'id': None,
+ 'inputs': [{'fulfillment': {'public_key': 'GtMiC8DQ274d3wsW7R4MMNvMU6DLcd4U9vg43tu9fFTp',
+    'type': 'ed25519-sha-256'},
+   'fulfills': None,
+   'owners_before': ['GtMiC8DQ274d3wsW7R4MMNvMU6DLcd4U9vg43tu9fFTp']}],
+ 'metadata': {'category': 'business'},
+ 'operation': 'CREATE'
+ }
+ 
+ The server method:
+ public static void handlePostService(String json) {
+    Json requestJson = new Json(json);
+    if (requestJson.operation.equals("CREATE")) {
+         //create a post
+        ...
+        renderJSON(returnJson);
+
+    } else if (requestJson.operation.equals("TRANSFER")) {
+        //transfer a post
+   ...
+        renderJSON(returnJson);
+    } else {
+
+    }    
+}
