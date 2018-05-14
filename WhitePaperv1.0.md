@@ -127,3 +127,16 @@ The token and transaction portion of Digital Credit will be based on the well-kn
 
 **Note: Digital Credit will utilize [IPFS](https://ipfs.io/) to store files.**
 
+# Compatibility
+
+With the popularity of the blockchain concept, more and more blockchain applications are being built on existing mature platforms such as Ethereum and Bitcoin. Thousands of blockchain and smart contract applications are built on these platforms. If it can achieve compatibility with these existing blockchain platforms, it will attract more blockchain developers to develop blockchain applications based on Digital Credit, which will have a very positive effect on the development of Digital Credit.
+
+Digital Credit 1.0 will use EOS.IO to implement functions such as tokens, token transactions, account managements, role managements, and smart contracts, and these functions will be encapsulated with dMVC. Therefore, the standard version of Digital Credit will be based on the DPOS consensus algorithm powered by EOS.IO (for tokens and smart contracts). Digital Credit 1.0 can also be called Digital Credit EOS.IO.
+
+At the same time, Digital Credit will also implement compatibility solutions for other blockchain platforms, namely: using the tokens and smart contracts of existing blockchain platforms to implement the functions of digital credits, and using dMVC to implement Digital Credit other features.
+
+For example, Digital Credit will launch an Ethereum-compatible version of Ethereum that uses Ethereum's tokens and smart contracts, and uses dMVC to implement other Digital Credit functions, namely: Digital Credit Ethereum. Bitcoin compatible version will also be introduced, namely: Digital Credit Bitcoin and so on. Other compatible versions will be selectively developed based on the influence and acceptance of relevant blockchain platforms.
+
+In the compatible version, such as Digital Credit Ethereum, tokens and smart contracts for the entire platform are developed based on Ethereum, while the remaining functions are based on dMVC, such as: database and data storage, control (account managements, role and organization managements , POAs: challenges, competitions, tests, contributions, learnings, posts, rankings, achievements, reviews, votings, digital credit assessments, digital credit credit actions, etc.), user view features. When certain functions of Digital Credit need to be completed based on tokens and smart contracts features, for example, members of the Digital Credit application need to initiate an ICO crowdfunding, then the crowdfunding tokens are not initiated by EOS.IO but by the Ethereum platform. Another example: members of the Digital Credit application need to apply for a loan. If the loan is approved, the credit for the member to obtain the loan defaults from Ethereum, ERC-20-compliant, Digital Credit (DGCT). After Digital Credit is released, Digital Credit (DGCT) released by the official version of Digital Credit (non-compatible version) will be exchanged with ERC-20 compliant Digital Credit (DGCT) released by Ethereum. Users of Digital Credit can flexibly switch the tokens used to settle, trade, and run smart contracts when using the Digital Credit main program.
+
+
