@@ -125,5 +125,5 @@ The token and transaction portion of Digital Credit will be based on the well-kn
 
 **Note: In order to develop Digital Credit community and application platform more effective, speed up the launching progress, and improve transaction performance, Digital Credit 1.0 will utilize [EOS.IO](https://eos.io/) to implement tokens and tokens transactions, smart contracts, account managements, role managements and other features. Data storage development will be based on [Tendermint](https://www.tendermint.com/) and [BigchainDB](https://www.bigchaindb.com/). The use of BigchainDB's decentralized and distributed database simplifies and encapsulates blockchain application development and creates an efficient, high-performance blockchain digital credit community and application platform.**
 
-**Note: Digital Credit will use [IPFS](https://ipfs.io/) to store files.**
+**Note: Digital Credit will utilize [IPFS](https://ipfs.io/) to store files.**
 
