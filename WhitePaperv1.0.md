@@ -179,4 +179,30 @@ public class Post extends Asset {
     public List<Comment> comments;
 }
 
+## Database and Data Storage
+
+dMVC uses BigchainDB to implement decentralized database and data storage, and uses dOPA for encapsulation, simplifying data operations and storage functions. Taking dOPA's Java implementation of dJPA as an example, in dJPA, data is inherited from the Asset class and needs to be the Owner of the data. At the same time, the subclass of Asset can only perform two operations: create and transfer, and cannot perform update and delete similar to traditional relational databases.
+
+Taking the Post class of Example 1 as an example, when we need to create a Post class entity, we need to execute a statement similar to the following:
+Post.title = "Post Title";
+Post.content = "Post Content";
+Post.owner = bob;
+Post.metadata = metadata;//optional
+Post createdPost = post.create();//post object has been created and persisted. the createdPost object now can obtain its transaction id by getTransactionID method.
+
+When we need to transfer the Post object to another role alice, we need to use the transfer method:
+Post transferredPost = createdPost.transferTo(alice);
+In this way, the createdPost object no longer belongs to bob but belongs to alice.
+
+When bob no longer needs this post object, and he can't find another object to transfer, he can transfer the post object to the recycle bin: recycleBin, or transfer it to himself, but the mark post object has already been discarded.
+createdPost.transferTo(recycleBin);
+Or
+Metadata.status = Metadata.OBSOLETED;
+createdPost.transferTo(this, metadata);
+
+When bob needs to modify the post object, he needs to transfer the post object to himself, providing the modified post object as a parameter. By default, the system will use the current Timestamp as the post modification time.
+createdPost.transferTo(this,updatedPost, metadata);
+
+**Note: When the type of stored data is a file, dOPA will store the file in the IPFS server rather than through BigchainDB.**
+
 
