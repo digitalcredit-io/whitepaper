@@ -53,6 +53,10 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 6. It is necessary to ensure a mechanism: the evaluation of the credibility of creditors will not be affected by external factors such as their region, race, country, religion, wealth, social level, social identity, etc., and it is absolutely authentic, objective, fair and trustworthy.
 
+## Blockchain technology opportunities
+
+In 2008, with the release of Bitcoin, blockchain technology began to be widely used by enterprises and developers. Blockchain technology makes it possible to create decentralized, trustworthy, immutable, secure, and objective applications.
+
 
 
 
