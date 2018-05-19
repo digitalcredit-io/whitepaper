@@ -153,7 +153,7 @@ dMVC will implement a cloud application development platform and a localized app
 
 dMVC will support mainstream application development languages such as: Java, Javascript, Python, Go, PHP, C#, C/C++.
 
-**Note: In the early lauched version, dMVC may only support certain languages such as Java, Javascript, and Python.**
+**Note: In the early lauched version, dMVC may only support certain languages such as Javascript, Python and Java.**
 
 # Model
 
