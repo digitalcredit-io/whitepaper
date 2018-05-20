@@ -618,3 +618,81 @@ The ranking will be based on the ranking algorithm. The ranking algorithm can be
 ### Achievement
 
 Achievement is some of the system's preset goals that users reached. For example: 30 successful contributions, successful in the top three in a competition and so on. Achievement can be preset by the system or customized by the application developer. When the user reaches an achievement, his/her achievement data will be stored.
+
+### Review
+
+Review is one of the most critical actions in Digital Credit, used to judge user actions, submitted content, user contributions, user capabilities, and skills.
+
+#### Decision Mode
+
+The review will have two decision modes: the auto review mode and the manual review mode.
+
+#### Automatic Review
+
+Automatic review is a process of objective automatic evaluation of user action, submitted content, and user contributions in accordance with pre-established conditions, rules, and algorithms. For example, if a test is an objective question (single choice and multiple choice) based test, the answer to the test is unique and objective, and the results can be obtained in an automated process. Automatic review procedures, rules, conditions, and algorithms all need to be submitted after repeated testing.
+
+After the auto review is over, the results of the review, user-related capabilities, and credit data are also recorded and written.
+
+Note: In the initial development of Digital Credit, in order to ensure the objectivity of the review, it would be more inclined to use the mechanism of auto-review decision-making as early as possible to prove the action.
+
+#### Manual Review
+
+When the review process cannot be automatically assessed through pre-defined procedures, rules, conditions and algorithms, manual review is required. Manual review is the process of manual evaluation by the reviewers.
+
+Manual review includes the review board, scorecards, results aggregations, appeals, re-reviews, etc.
+
+#### The review Board
+
+The reviewers are users of Digital Credit community who have manual review qualifications. In Digital Credit, the reviewers are determined according to the skill and ability classification that the users who meet the qualifications of a certain type of skill or ability are qualified for manual review and will be included in the review board of such skills or abilities. For example, @bob is a Java language reviewer, but not a graphic design reviewer. To become a reviewer in a certain field, users need to reach certain capability conditions and contributions. The advantage of being a reviewer is that the reviewer can not only have the power to review the action in a certain field, but also get rewards from it, such as token rewards, and better ability and credit evaluation.
+
+The reviewer' review results are public to the users being reviewed and are not visible to other reviewers. If the user is dissatisfied with the results of the review, he can file a complaint and request a re-review. If the user being reviewed feels that the evaluation of the review is seriously lacking in impartiality or has serious doubts about the assessment ability or skills, an arbitration application may be initiated. Once an user being reviewed initiates an arbitration application, it is evaluated by a higher-level reviewer, such as: the initiator of ability action, the owner of the ability application, or the system administrator. After a certain ability action has ended, such as a competition, the sponsors of the ability action can evaluate the performance of the reviewers, and the participants of the ability action can also evaluate the performance of the reviewers.
+
+The reviewers are hierarchical. Higher-level reviewers receive higher rewards than lower-ranking reviewers. The rating of reviewers is determined based on their ability, review performance and contribution. The rating of the reviewers can be raised and lowered according to the performance of the reviewers, and even be disqualified from the review board.
+
+The awards received by the reviewers are also related to the workload and difficulty of the review. For example, the more participants participate in the ability actions to be reviewed, the more difficult the review is, and the higher the reward is. In the same way, feedback from sponsors and feedback from sponsors of good action are better reviewed, and rewards obtained are also higher.
+
+The number of reviewers is determined by the initiator of the ability action, generally not less than 3 and no more than 7 persons. The initiator of the ability action can set up a chief reviewer. The chief reviewer has a higher proportion than the other reviewers (but no more than 50%) and can receive higher rewards. When the ability sponsor initiates the ability action, after setting the number of reviewers, the number of chief reviewer, and the ability, skills, evaluation, and credit requirements that the reviewers need to meet, if the ability or skill requirements are met, the qualified reviewers may apply for registration. As long as the reviewers' ability, skills, evaluation, credit, and other requirements are met, his application for ability action registration will immediately be passed.
+
+After the sponsor of the ability action has set the proportion of the chief reviewer (the proportion of the general chief reviewer is 30%-50%), the proportions of the other reviewers will be evenly distributed. If there is no chief reviewer, the proportion of all reviewers is evenly distributed. The scores of the participants in the ability action are finally obtained by summing up all the reviewers' scores.
+
+The grades or scores of the reviewer will be downgraded or downgraded if he/she:
+
+The reviewer failed to review and submit the scorecard on time.
+
+The evaluation of the reviewer was seriously unfair and was successfully arbitrated by the participants.
+
+The ability or skills of the reviewer did not meet the criteria and was successful arbitrated by the participants.
+
+During the review process, the reviewer had linguistic violence, discrimination, personal assault and political infringement.
+
+After the review process is over, the sponsors and the participants been reviewed of the ability action can evaluate the performance of the reviewers, which will also affect the rating and credit of the reviewers.
+
+#### Scorecard
+
+If a certain ability action is about to be initiated, the publisher of ability action needs to set a scorecard, and can also select the default scorecard provided by the ability action application itself. The reviewers need to score according to the scorecard and give the reason of each score.
+
+#### Result Aggregation
+
+After the review process is over, the scores will be aggregated according to the proportion of the reviewers and published to the reviewers. Participants can view the reviewer's rating sheet and the reason for the rating.
+
+#### Appeal
+
+When the participant to be reviewed is not satisfied with the rating of the assessment, a complaint may be initiated for a rating item. Once the participant initiates an appeal, the reviewer needs to answer and handle the appeal of the participant.
+
+#### Re-review
+
+The reviewer only need to answer the rating items that the participant questioned, and respond to the participant. After the Re-review, the reviewer may choose whether to amend the review score.
+
+### Voting
+
+Voting is an action of voting through resolutions. Digital Credit will use voting in community building, community democracy, and certain important and controversial issues.
+
+When the community members meet certain qualifications, they will have the right to vote. After the voting is initiated, community members can choose to exercise their voting rights or they can give up.
+
+After the voting is completed, the voting results will be announced and Digital Credit will execute the voting results based on the results of the voting resolution.
+
+Voting itself can be used as a proof of ability, but voting itself is only a resolution for the community construction of Digital Credit, community democracy, or certain important and controversial issues. Digital Credit does not recommend that voting action be a hard ability requirement.
+
+### Custom Ability Proof Action
+
+In addition to standard ability proving actions such as challenge, competition, testing, teaching, posting, ranking, achievement, contribution, review, voting, digital credit application developers can customize new proof of ability actions. The application needs to undergo Digital Credit community review and repeated testing before its application can be put on the Digital Credit application market.
