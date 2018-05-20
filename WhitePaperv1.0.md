@@ -452,3 +452,169 @@ For example: @bob's role in @teamA is both the "Team Leader" and "Reviewer", and
 
 For the self-organizing management purpose, Digital Credit will establish a mechanism to encourage community members to actively participate in the community to contribute to get higher organizational roles. For example, when a member whose contribution reached a certain level and his/her related ability meets the standard at the same time, Digital Credit can automatically promote the member's role to Reviewer. Reviewer is more privileged than the regular member and can review the content posted by the regular member. (Like traditional BBS forum management, forum administrators can assign permissions to different sections, such as assigning moderators, etc.)
 
+## POA Actions
+
+Members of Digital Credit can demonstrate their ability through proactive actions, that is, POA Actions. Proof-of-Ability actions include challenges, competitions, tests, contributions, teaching, postings, rankings, achievements, reviews, voting, and more.
+
+### Skill Rating
+
+In the ability proving actions, skill ratings for participants can be included. If it is an automatic review, the skill rating is automatically determined by the system; if it is a manual review, the skill rating is determined manually. For details of the review and its decision-making model, please refer to the [Review](#review) section. The ability proving actions can be used to judge the participants’ multiple skills. When skills is judged by the ability proving action, the name of the action will be included in the account data of the participants. For example: @bob.skills.Java.level.competitionA = A, which indicates bob's Java skills and was rated A in the competition named competitionA.
+
+### Credit Rating
+
+In the ability proving actions, the credit performance of the participants can also be rated, but only the contractual proof of ability can add credit ratings. For example, sponsor A initiates a competition, and eligible participants will receive a certain amount of tokens as startup funds, but require participants to submit solutions within a specified period. If the participant fails to submit the solution on time, it can be regarded as a failure of compliance, and the credit compliance rating of the participant will be affected. For example: @bob.credit.compliance.competitionA = D, it means that Bob's performance credit in the competitionA is D.
+
+### Challenge
+
+Challenges can include competitions in a broad sense. In Digital Credit, challenges can be unranked and winner-undetermined. For example, for some charity challenges, the challenge creator only needs to assess whether challenger has reached the challenge goal. It does not need to determine the winner(the challenge can also determine the outcome and the ranking, but generally such action will be performed as competition).
+
+The action phases of challenge in Digital Credit include:
+
+Challenge Initiation Phase
+
+Challenge Registration/Registration Phase
+
+Challenge Phase
+
+Submission Phase(if any)
+
+Challenge Review Phase
+
+Results Announcements Phase
+
+Challenge Award Phase
+
+The sponsor or creator of the challenge can set rewards for the challenger after achieving/exceeding the challenge goal. Rewards can be tokens, achievements, titles, or offline rewards.
+
+The sponsors or creator of the challenge can set challenger registration requirements. During the challenge registration phase, participants will fail to participate in the challenge if they cannot meet the basic requirements for participating in the challenge.
+
+The sponsors or creators of the challenge need to set deadlines for the challenges. In some cases they can set the duration of the challenges to be long, such as one year or even longer. However, Digital Credit recommends setting milestones to ensure that participants in the challenge are participating the challenge step-by-step.
+
+Some challenges require challengers to upload solutions online, such as solutions to a problem. Challengers can upload their plans multiple times before the deadline of the challenge, but they will be subject to the last upload.
+
+After the challenge phase, challenge needs to be reviewed. There are two modes of review: automatic review and manual review. Please refer to the [Review](#review) section for specific assessment mode.
+
+After the review phase, the results of the challenge will be announced. If so, the challenger's skill rating and credit rating will also be judged and recorded.
+
+According to the smart contract, the challenge winner will receive a corresponding token reward (which can be single or multiple).
+
+After the challenge results are announced, the challenger’s performance will be recorded: @bob.challenges.challengeA. In this example, bob's achievements and data in challenging challengeA will be recorded, for example: @bob.challenges.challengeA.score = 800. The general challenge is to record whether the challenge succeeded, usually identified by isSuccess. For example: @bob.challenges.challengeA.isSuccess=true, indicating that the challenge was successful.
+
+### Competition
+
+The competition is a kind of multi-person participation, and ultimately it is necessary to determine the outcome of the competition. There is also a situation when all the score of the participating contestants does not meet the standard. In this case, the competition may not have winners and rankings.
+
+The action phases of the competition in Digital Credit include:
+
+Competition Initiation Phase
+
+Competition Registration Phase
+
+Competition Phase
+
+Submission Phase (if any)
+
+Competition Review Phase
+
+Results Announcements Phase
+
+Competition Award Phase
+
+The sponsor or creator of the competition can set the prizes for the winner of the competition (which can be determined by competition ranking). Rewards can be tokens, achievements, titles, or offline rewards.
+
+The sponsor or creator of the competition can set the registration requirements of the contestants. During the registration phase of the competition, if participants cannot meet the basic requirements for participating in the competition, they will fail to participate in the competition.
+
+The sponsors or creators of the competition need to set the deadline for the competition. In some cases they can set the duration of the competition to be very long, such as one year or even longer. However, Digital Credit recommends setting milestones to ensure that participants in the competition are participating the competition step-by-step.
+
+Some competitions require contestants to upload solutions online, such as solutions to a problem. Participants can upload their proposals multiple times before the deadline of the competition, but they will be subject to the last upload.
+
+After the competition phase, competition needs to be reviewed. There are two modes of review: automatic review and manual review. Please refer to the [Review](#review) section for specific assessment mode.
+
+After the review phase, the results of the competition will be announced (ranking, scores, etc.). If so, the skills rating and credit rating of the participants will also be judged and recorded.
+
+According to the smart contract, contest winners will receive corresponding token rewards (which can be single or multiple).
+
+In programming or algorithm competitions, Digital Credit provides a virtual compiler environment such as C, C++, Java, Go, Python, and so on. Contestants enter codes and submit in a virtual compilation environment.
+
+After the results of the competition are announced, the results of the participants will be recorded, for example: @bob.competitions.competitionA. In this example, the results and data of bob in competition competitionA will be recorded. Generally, the competition records needs to include the ranking value, for example: @bob.competitions.competitionA.rank=3.
+
+### Test
+
+Test is an action that tests the skills and abilities of participants and verifies whether their ability or skills meet the standards. The standardized test action includes the process of setting testing questions, testing, scoring.
+
+Test action is mainly for the tester's ability or skills, but also can be irrelevant to ability or skills such as psychological testing. However the main purpose of the test is to assess the tester's ability or skills, and give corresponding rating.
+
+The initiator of the test can first prepare a question bank and classify the questions from the question bank, such as single choice questions, multiple choice questions and so on. The initiators of the test can specify certain questions or just select the questions randomly from the question bank.
+
+The early versions of Digital Credit prefer automatic review to tests. In other words, it tends to be more objective.
+
+The action phases of tests include:
+
+Questions Preparing Phase
+
+Test Initiation Phase
+
+Test Registration Phase
+
+Test Phase
+
+Test Scoring Phase
+
+Results Announcements Phase
+
+In programming or algorithm tests, Digital Credit provides a virtual compiler environment such as C, C++, Java, Go, Python, and so on. Testers enter codes and submit in a virtual compilation environment.
+
+After the review phase, the results of the test will be announced and the testers' skills or abilities will be recorded and evaluated.
+
+At the same time, the test scores of the testers will be recorded. For example: @bob.tests.testA.score=85.
+
+### Contribution
+
+In Digital Credit, contributions are mainly directed at the contribution to the Digital Credit community, including:
+Contributions to the Digital Credit main program code (code effectively meets Digital Credit's programming requirements and passes review)
+Contributions to the Digital Credit main program BUG fixing and approved
+Contributions to the testing and verification of the Digital Credit main program and approved
+Diversified client for Digital Credit main program, such as mobile phone, computer and web and approved
+Build a node/super node for Digital Credit and pass the review
+Develop an effective application for Digital Credit and submitted to application market and approved
+Provide effective marketing solutions (such as advertising and promoting) for Digital Credit and approved
+Provide effective and constructive suggestions for Digital Credit and is accepted.
+Provide secure testing and repair for Digital Credit system and approved.
+
+Once the contribution has been reviewed by Digital Credit, the contributor will receive a certain amount of reward, and the contribution will be recorded. Digital Credit divides the members' contribution levels into: S, A, B, C, and D.
+S: S+++, S++, S+, S, S-, S--, S---
+A: A+++, A++, A+, A, A-, A--, A---
+B: B+, B, B-
+C: C+, C, C-
+D
+
+The rewards for different levels of contribution are also different.
+
+When a member's contribution is recorded, its contribution is named, naming convention: contribution category. contribution time
+For example: @bob.contributions.mainCode.201809031400
+For the above contributions, we can read the contribution related data from the contributor: contribution content, contribution time, contribution rating, and contribution award.
+For example: @bob.contributions.mainCode.201809031400.level = B+
+
+### Teaching
+
+Digital Credit encourages members to provide free teaching courses for those who lack of skills. Teaching can also be paid (paid in tokens), but Digital Credit encourages open, free content for those who lack of skills or abilities. Each teaching participant and finisher can rate the teaching feedback. Teaching and courses need to be reviewed before they are released.
+
+### Posting
+
+Users can publish digital content in Digital Credit, including: articles, videos, photos, paintings, designs, music, games and more. The digital content published by the user needs to be reviewed before it can be announced. Content review includes: whether the published content contains personal attacks, pornography, violence, political infringement, misconduct, excessive exaggeration, deception, etc.; whether the published content is positive and meaningful.
+
+Digital content published by users can be charged or free of charge. At the same time, digital content published by users will have digital copyright certification.
+
+Digital content readers, viewers, and users can evaluate digital content. User's evaluation of digital content, overall evaluation, etc. will be recorded.
+
+In addition to articles, digital content published by users as files will be stored in IPFS.
+
+### Ranking
+
+Ranking is a sort of action that ranks the user's ability action results, user ability scores etc., such as the ranking of contestants in a certain contest, the ranking of testers, or some common rankings, such as the ranking of user's contribution, user skills, etc..
+
+The ranking will be based on the ranking algorithm. The ranking algorithm can be based on the Digital Credit main program or can be a customized program.
+
+### Achievement
+
+Achievement is some of the system's preset goals that users reached. For example: 30 successful contributions, successful in the top three in a competition and so on. Achievement can be preset by the system or customized by the application developer. When the user reaches an achievement, his/her achievement data will be stored.
