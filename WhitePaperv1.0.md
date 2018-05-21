@@ -61,6 +61,27 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
   * [Role and Organization Management](#role-and-organization-management)
   * [POA Actions](#poa-actions)
     + [Skill Rating](#skill-rating)
+    + [Credit Rating](#credit-rating)
+    + [Challenge](#challenge)
+    + [Competition](#competition)
+    + [Test](#test)
+    + [Contribution](#contribution)
+    + [Teaching](#teaching)
+    + [Posting](#posting)
+    + [Ranking](#ranking)
+    + [Achievement](#achievement)
+    + [Review](#review)
+      - [Decision Mode](#decision-mode)
+      - [Automatic Review](#automatic-review)
+      - [Manual Review](#manual-review)
+        / [The Review Board](#the-review-board)
+        / [Scorecard](#scorecard)
+        / [Result Aggregation](#result-aggregation)
+        / [Appeal](#appeal)
+        / [Re-review](#re-review)
+    + [Voting](#voting)
+    + [Custom Ability Proof Action](#custom-ability-proof-action)
+      
   
 
  
@@ -684,7 +705,7 @@ When the review process cannot be automatically assessed through pre-defined pro
 
 Manual review includes the review board, scorecards, results aggregations, appeals, re-reviews, etc.
 
-#### The review Board
+#### The Review Board
 
 The reviewers are users of Digital Credit community who have manual review qualifications. In Digital Credit, the reviewers are determined according to the skill and ability classification that the users who meet the qualifications of a certain type of skill or ability are qualified for manual review and will be included in the review board of such skills or abilities. For example, @bob is a Java language reviewer, but not a graphic design reviewer. To become a reviewer in a certain field, users need to reach certain capability conditions and contributions. The advantage of being a reviewer is that the reviewer can not only have the power to review the action in a certain field, but also get rewards from it, such as token rewards, and better ability and credit evaluation.
 
