@@ -955,4 +955,86 @@ The test network, Digital Credit will provide a test network environment. Applic
 
 The private network is built by third-party who uses the source code of Digital Credit for application development, and does not connect to the main network of Digital Credit and implements the Digital Credit function in its own environment. Because Digital Credit is open source software, as long as the third party complies with Digital Credit's GPL License(Please see [License](#license) section), Digital Credit will not restrict the use and modification of Digital Credit's source code by third parties, including setting up a private network.
 
+# Business Application Scenarios and Areas
 
+## Investment
+
+In modern investment area, most investors are unprofessional, but it is very difficult for them to identify those professional investors and conduct “follow-up” because they have no way to effectively verify investment levels of other investors.
+
+Digital Credit Solution: Investor’s investment ability can be verified in Digital Credit. Therefore, investment is no longer a difficult task, thus ordinary investors only need to follow up the “guru” for investment.
+
+For example, holding a long-term, regular investment competition to evaluate performance of investors (assuming the use of simulation investing environment to assess the returns of participants), and regularly rank the participants’ investment performance (eg, weekly, monthly, quarterly etc.) Because the investing performance is automatically verified by the system, its investment performance and stability can be effectively verified by the system. In such investment system, it is easy for ordinary investors to find those who are professional at investment by their investment performance in competitions. Those professional investors can obtain greater returns by launching crowdfunding, lending, and selling tickets (sharing their own investment decisions).
+
+## Financial Lending
+
+In modern Internet lending applications, the real ability of lenders and the level of real income are often difficult to be verified, which will lead to risk.
+
+The ability and credit of lenders are objective and real in Digital Credit. Therefore, the creditworthiness of lenders can be assessed most objectively and the appropriate loan amount can be given. Therefore, loans based on Digital Credit need neither mortgage nor guarantee. They can be issued only on the basis of the true ability and credit of the lender. When the lender defaults, the default will be recorded, even facing other penalties from Digital Credit, see the [Default or Fraud Treatment](#default-or-fraud-treatment) section. Therefore, financial lending in Digital Credit is relatively low risk and flexible.
+
+## Crowdfunding, ICO
+
+In current internet crowdfunding area, especially ICO, it has been criticized more severely. The main reason is the lack of verification of the authenticity of ICO fundraiser’s project and the lack of verification of ICO team’s ability and authenticity.
+
+Crowdfunding and ICO in Digital Credit will have ability/skills requirement to fundraisers and their teams, and this capability needs to be verified by the Digital Credit system. (You must participate in the POA actions, and it is possible to obtain the ability evaluation through the ability rating, such as participating in the challenge, competition and test.)
+
+Digital Credit has relatively strict requirements for ICO. One of them is that for ICO crowdfunding tokens, Digital Credit will not assign all tokens to the ICO initiator at one time, but will be distributed in stages according to the progress of the ICO initiator’s project. The pre-designated milestones of the ICO project will be reviewed. When the ICO project fails to achieve the milestone goal, or if there is a long-term lack of progress or project stagnation, subsequent token allocations will cease.
+
+If a crowdfunding or ICO party has breached the contract or engaged in fraud, Digital Credit has corresponding penalty measures. See [Default or Fraud Treatment](#default-or-fraud-treatment) for details.
+
+## Venture Capital, Start-Up Investment
+
+In many cases, due to the lack of awareness of entrepreneurial and start-up investors about the true capabilities of the target, there will be investment errors or risks. Digital Credit can effectively verify the capabilities of its members. Therefore, investors who participate in entrepreneurial ventures and start-up investments do not have a lack of understanding of the ability of the target to be voted, and they also avoid many risks.
+
+## Software and Project Outsourcing
+
+In the field of software and project outsourcing, the project undertaker's capabilities are often unable to effectively test and may cause the project consigner to waste time and money. Digital Credit enables project commissioners to publish projects in the form of competitions, which can ensure that the project is the excellent selection, reduce risks and increase project success rate. At the same time, Digital Credit allows project delegates to effectively acquire participants’ abilities and skills in order to reduce risks and increase project success.
+
+## Human Resources
+
+In the field of human resources, such as talent recruitment, candidates often fictionalize or exaggerate their curriculum vitae and personal abilities. Preliminary interviews and short-term trial periods often fail to effectively test their true ability levels. When companies discover the ability of recruiters are not competent, it is often too late: corporate resources have been wasted, and there are many cases where companies can't recruit suitable people in key positions and delay corporate development.
+
+Digital Credit allows talent recruiters to understand the real and proven ability of the recruiting target to effectively screen applicants and increase recruitment success.
+
+## Other Business Areas
+
+Other business areas such as arts, music, sports, advertising, marketing, corporate consulting, and planning can all benefit from Digital Credit's verifiable abilities and verifiable credit features.
+
+# Non-Profit, Non-Commercial Application Scenarios
+
+## Poverty Problem
+
+The problem of poverty is a headache thorny issue for all countries. There are many root causes of poverty. One of them is that the poor people do not have better social opportunities. Poor families will certainly have possibilities to raise outstanding ability person. However, because their abilities cannot be identified due to their low social level and lack of social relations, it is difficult for them to be affirmed by the society and thus lose many job opportunities and credit opportunities.
+
+Digital Credit can provide a fair and just platform. As long as you can prove your ability, then you have the opportunity to get a loan or even a real job opportunity. 
+
+At the same time, the Digital Credit community will reward community members who are actively helping the poor to educate and elevate the skills of the poor, encouraging them to contribute to social issues through positive incentives.
+
+## Social Equity Problem
+
+The issue of social equity is also an issue that many countries cannot handle effectively. One of the root causes of the problem of social equity is that the bottom society does not have the social opportunities it deserves. For example, people from low-level families lack more social relationships than those from wealthy families, so their abilities cannot be effectively recognized and it is difficult for them to obtain equal social opportunities. 
+
+In the Digital Credit community, they are completely equal. All opportunities and credit opportunities are based entirely on ability and credit and have nothing to do with other factors. Digital Credit will not judge the members of the community in addition to their ability and includes any factors other than their ability and credit. Therefore, Digital Credit is a fair community, and it can give the bottom society a chance to show their true talent and job and credit opportunities. 
+
+## Corruption Problem
+
+There are many root causes of corruption. One of the reason is the true capabilities of civil servants or social public servants have not been effectively verified. Using Digital Credit, anyone’s true ability can be effectively verified. For the government, hiring a competent public officer can reduce the corruption problem more than the incompetent public employee.
+
+## Refugees, Illegal Immigration Problem
+
+Problems of refugees and illegal immigration are very troublesome for countries. The key to the problem of refugees and illegal immigrants is that these people lack effective identities. Without identity, there is no credit and there is no educational opportunity. As a result, these people who lack identity often engage in illegal or criminal activities, or engage in gray jobs.
+
+Through Digital Credit, these refugees or illegal immigrants can obtain loans through their ability and credit proofs, and have the opportunity to engage in legal work so as to maintain social stability.
+
+## Other Public Welfare Issues
+
+Other public welfare issues, such as environmental protection, charity, etc., can all benefit from the verifiable ability and verifiable credit features in Digital Credit.
+
+# Conclusion
+
+Digital Credit, by using blockchain technology, builds ability proof actions (challenge, competition, testing, teaching, posting, rankings, achievement, contribution, review, voting, etc.), digital credit action (awarding rewards, issuing loans, approving the crowdfunding and allowing sales of tickets, etc.), autonomous communities with positive incentives and negative incentives to create a decentralized, trustworthy, easy-to-use, immutable, autonomous, ability and credit verifiable digital credit community and application platform. Digital Credit community and application platform can be applied to multiple fields including business areas (investment, financial lending, crowdfunding, venture capital, software and project outsourcing, human resources, etc.) and public welfare fields (poverty problem, social equity problem, corruption problem, refugees and illegal immigration problem, etc., and can provide effective solutions to these areas.
+
+# License
+
+Without permission, anyone may use, reproduce or distribute any material in this white paper for non-commercial and educational use. (ie: other than for a fee or for commercial purposes) provided that the original source and the applicable copyright notice are cited.
+
+Digital Credit is an open source project that complies with the [GPL License Version 3](https://en.wikipedia.org/wiki/GNU_General_Public_License) .
