@@ -696,3 +696,127 @@ Voting itself can be used as a proof of ability, but voting itself is only a res
 ### Custom Ability Proof Action
 
 In addition to standard ability proving actions such as challenge, competition, testing, teaching, posting, ranking, achievement, contribution, review, voting, digital credit application developers can customize new proof of ability actions. The application needs to undergo Digital Credit community review and repeated testing before its application can be put on the Digital Credit application market.
+
+## Digital Credit Evaluation
+
+Digital credit evaluation is the process of comprehensive evaluation of the user's digital credit. Digital credit evaluation often occurs when users need to perform some digital credit actions (such as applying for a loan, applying for crowdfunding, selling tickets, etc.).
+
+Digital credit evaluation is a process that is performed automatically by the Digital Credit system and relies on programs, data, and algorithms to run. When Digital Credit conducts digital credit evaluation for an account holder, it will by default obtain the Read permission of all ability data, ability action data and credit data under the evaluation account, and Read and Write permission of the credit.evaluations field under the account. If the account holder rejects this permission request, the digital credit evaluation process will not be performed.
+
+Digital Credit acquires account abilities, ability action data, and credit data using the list method. Take account body @bob as an example:
+
+@bob.listAll, gets all field properties that can be read (or read/write) under @bob. If the field access under the name of @bob is NA, the relevant fields will not be displayed after the list method is executed.
+
+@bob.listSkills, get the field properties of all ability evaluations under @bob.
+
+@bob.listPOA, get all POA field properties under the @bob name.
+
+@bob.listCredit, get the field properties of all credit data under the @bob name.
+
+If we execute @bob.listAll, it will return the following result:
+```
+@bob.skills(R)
+@bob.competitions(R)
+@bob.challenges(R)
+@bob.tests(R)
+@bob.contributions(R)
+@bob.teachings(R)
+@bob.posts(R)
+@bob.ranks(R)
+@bob.achievements(R)
+@bob.reviews(R)
+@bob.votings(R)
+@bob.credit(R)
+```
+
+We can further use the list method for fields under @bob, for example: @bob.credit.listAll, which returns the following result:
+```
+@bob.credit.compliance(R)
+@bob.credit.evaluations(RW)
+@bob.credit.disputes(R)
+@bob.credit.creditActions(R)
+```
+
+We can see that the access right of the @bob.credit.evaluations field is read and write because after the digital credit evaluation is over, the evaluated digital credit data is written into the @bob.credit.evaluations field.
+
+When Digital Credit conducts a digital credit evaluation on an account holder, it analyzes the ability rating, ability action, and credit data under the name of the account holder. The analysis process relies on algorithms that have been repeatedly tested and verified. The algorithm will be open source, and will continue to be updated and optimized.
+
+### Central Account
+
+When the Digital Credit main program is launched, one or more central accounts will be created. The Central Account is mainly responsible for issuing rewards, loans, and compensation for losses to community users.
+
+The security design of the central account is different from the general account:
+1. The central account is not controlled by a single key. Each transaction of the central account will communicate with at least 21 super nodes. At least 2/3 of the super nodes (ie, at least 14 super nodes) confirm the legitimacy of the transaction, then the transaction will be processed. Therefore, the central account cannot be controlled by any single individual.
+2. Transaction actions and rules of the central account will be determined and cannot be changed once Digital Credit is officially launched.
+3. The source code related to the transaction action of the central account can not be changed by single person when Digital Credit is officially launched.
+4. Each super node running Digital Credit will verify the consistency of the central account code when performing central account-related operations.
+
+### Autonomous, Positive and Negative Actionss
+
+The construction of the Digital Credit community is highly dependent on self-government and encourages community members to engage in positive, meaningful, valuable, and positive actions, and not to engage in negative, meaningless, worthless, or negative actions.
+
+Autonomy includes positive actions and negative actions, and positive actions include:
+1. Awards (including token rewards)
+2. Upgrade ability, credit rating
+3. Issue title
+4. Role promotion (for example, from ordinary members, to become a judge in a certain area)
+5. The community broadcasting the action as a good example
+
+Negative actions include:
+1. Penalty (including token punishment)
+2. Reduced ability, credit rating
+3. Role demotion (for example, from a certain area reviewers to ordinary members)
+4. Prohibit transactions
+5. Community informs its violations
+6. Restricted access (such as the prohibition of lending, crowdfunding, selling tickets, and participating in certain ability proving actions)
+7. Close account
+
+## Digital Credit Credit Action
+
+Different from the ability proving action, the digital credit credit action is based on the ability and credit status of the creditor. Its specific performance is to award awards, issue loans, approve crowdfunding, and allow tickets to be sold.
+
+### Awarding Rewards
+
+The reward in credit action is not the same with the reward in the ability proving actions. The issuer of the reward in credit action is the central account, and the reward issuer in the ability proving action is the initiatorof the POA. Awarding a reward is a special type of digital credit. Once awarded, rewards will not be withdrawn.
+
+The award is mainly for members who have contributed to the construction of Digital Credit community. Please refer to the [Contribution](#contribution) section for details. Awarding awards is generally an active action of Digital Credit. The main purpose is to encourage members of the Digital Credit community to make positive and meaningful contributions to the community.
+
+### Issuing Loans
+
+After Digital Credit evaluated the digital credit of the creditor, it can issue loans to the creditor. Loans can be interest-free or with interest. The entity applying for a loan needs to be authenticated.
+
+The issuing entity of the loan may be the central account of Digital Credit, or it may be a third party. The qualifications of the third party issuing the loan need to be approved by Digital Credit.
+
+The tokens for issuing loans are generally DGCT, and can also be digital tokens such as EOS, ETH, Bitcoin and more. The loan token issued from the Digital Credit Central Account can only be DGCT.
+
+The loan has a loan term and a repayment method. The borrower can sign a smart contract with the lender according to the relevant loan term and repayment method.
+
+When approaching the loan repayment date, Digital Credit will check the borrower's repayment account address. If it finds that the balance of the repayment account is insufficient for repayment, a notification will be sent to remind the borrower. When the borrower fails to repay the loan on time, its due date will be recorded in its credit history. When the borrower is overdue for a long period of time, the loan issuer may request Digital Credit to recover the loan after a dispute has been filed. Digital Credit’s recovery of loans includes freezing accounts, reducing credit ratings, recording defaults, and even broadcasting violations.
+
+### Approving Crowdfunding
+
+In Digital Credit, crowdfunding can include crowdfunding with token issuance, ie, ICO, or crowdfunding without token issuance (crowdfunding is DGCT, BTC, ETH, EOS or other tokens). Individuals applying for crowdfunding need to have identity verification.
+
+In the official release of Digital Credit, Digital Credit EOS.IO will support the token ICO issued through EOS.IO; Digital Credit Ethereum will support the token ICO issued by Ethereum.
+
+When ICO crowdfunding applications are issued on Digital Credit, Digital Credit requires ICO fundraisers to:
+
+1. The ICO fundraiser must apply for an ICO release in the form of an organization. The minimum number of people in an organization is two.
+
+2. The members under the organization applying for the crowdfunding of ICO must meet basic skills requirements. For example, ICO organizations need to divide the roles of members in an organization, such as team leaders, developers, designers, testers, and so on. If the ICO project is planned to be developed in the C/C++ language, the developer role in the organization should meet the minimum skill requirements for C/C++ that can perform ICO project. These developers can demonstrate their own C/C++ skill rating by participating in competitions, challenges, tests, and other capabilities to meet the requirements of participating in the ICO project. Digital Credit does not require all members in the ICO project organization pass the skill requirements, but will request the number of members required to meet the criteria based on the amount of crowdfunding they apply for. For example, the maximum amount of crowdfunding for the ICO applied for is 20 million U.S. dollars, and the number of people whose skills and ability requirement is higher than 50%, and the minimum is 1 person. If the amount of crowdfunding for applying for ICO is higher, the proportion of required standards is higher.
+
+3. The organizations that apply for launching ICOs need to provide the exact project schedule and milestones, as well as the number of crowdfunding tokens that need to be obtained after each milestone is completed. ICO crowdfunding tokens will not be transferred to the ICO application group's account all in one. Instead, they will be transferred in batches according to different phases and milestones. When the ICO application organization failed to complete the milestone target on schedule, and after the Digital Credit found that the project had a large gap with the milestone target and progress was slow, Digital Credit could temporarily stop transferring the subsequent ICO crowdfunding token to the ICO organizational account. If the ICO project ceases to be updated, Digital Credit believes that it is unable to perform or fraud, and Digital Credit can return the remaining crowdfunding tokens to the funders. At the same time, the credit rating of the ICO project organization and all members of the organization will be lowered, or even prohibited from trading, permission limits, closure of accounts, and even the entire network. The first Crowdfunding Coin obtained by the ICO crowdfunding organization is the Startup Tokens, and the start-up Tokens must not be higher than 40% of the ICO Total funding amount.
+
+4. The ICO project for the organization that applied the ICO must be open-source at Github. Digital Credit will regularly check the progress of the open source project. If progress does not meet expectations or if there is no progress at all, Digital Credit will warn the project holder, or even suspend the follow-up token transfer for the ICO project. 
+
+For crowdfunding actions without token issuance, it is similar to crowdfunding with token issuance. Crowdfunders ultimately need to submit a shaped product, service, and work to complete the initial crowdfunding performance and also need to set milestones for crowdfunding projects. With regard to crowdfunding without token issuance, the issuer may be an organization or individual and the crowdfunding may be as low as one. Fundraisers must meet the minimum skills required for their crowdfunding project. Similar to ICO crowdfunding, when crowdfunding fails to complete milestones on schedule, or progress is slow, or has no progress, or crowdfunding projects have stopped, Digital Credit can stop the follow-up of the supply of crowdfunding tokens and return the crowdfunding tokens.
+
+### Allowing Sales of Tickets
+
+Tickets are credits that require advance approval through Digital Credit. Tickets are similar to tickets for live concerts, movies, ball games, and courses. It is the content provider in the Digital Credit that has previously accessed the content or the consumer has received a replacement coin to allow him access to use the content. Digital Credit will review the ability of members who need to sell tickets, and if they can meet the requirements, they will be allowed to sell tickets.
+
+If the purchaser of the ticket is dissatisfied with the content provided by the seller’s promise of the ticket, a dispute can be made through Digital Credit. After the arbitration of Digital Credit found that the seller of the ticket did not complete the commitment to the contents of the ticket purchaser’s content, it could record its credit default action and even suspend its ticket sales.
+
+### Other Custom Digital Credit Credit Action
+
+In addition to awarding actions, issuing loans, approving crowdfunding, and allowing sales of tickets, Digital Credit allows application developers to customize other credit actions for digital credit, but needs to undergo digital credit review and repeated testing. Applications can be placed on the Digital Credit application market.
