@@ -8,6 +8,10 @@ digitalcreditio@outlook.com
 
 [digitalcredit.io](http://digitalcredit.io)
 
+Introduction Video:[https://www.youtube.com/watch?v=BVn9AcnhC20](https://www.youtube.com/watch?v=BVn9AcnhC20)
+
+Blog:[Why Blockchain is an Antidote to Great Human Problems such as Human Value Problem](https://medium.com/@brucezhang_67696/why-blockchain-is-an-antidote-to-great-human-problems-such-as-human-value-problem-c6979428f321)
+
 
 **Abstract:** Digital Credit is designed using a brand new blockchain architecture by implementing POA (Proof of Ability) actions(challenge, competition, test, teaching, posting, ranking, achievement, contribution, review and voting, digital credit evaluation and digital credit actions etc.) to create a decentralized, trustworthy, easy to use, immutable, autonomous digital credit community and application platform. Digital Credit simplifies the blockchain application development and implements a distributed, decentralized MVC framework: dMVC (decentralized Model-View-Control), which includes: model part: data structure, database and data storage; control part : actions, services, account management, role and organization management, tags and categories; Proof of Ability Actions, including: challenge, competition, test, contribution, teaching, post, ranking, achievement, review, voting, etc. ; digital credit evaluations, digital credit actions (including awarding rewards, issuing loans, approving crowdfunding, allowing sales of tickets, etc.), tokens and smart contracts, and dispute resolutions; Views: Clients, etc. This allows the creation of distributed, decentralized, authentic, trustworthy, easy to develop, immutable, safe, objective, fair and autonomous digital credit communities and applications based on POA.
 
