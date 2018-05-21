@@ -820,3 +820,139 @@ If the purchaser of the ticket is dissatisfied with the content provided by the 
 ### Other Custom Digital Credit Credit Action
 
 In addition to awarding actions, issuing loans, approving crowdfunding, and allowing sales of tickets, Digital Credit allows application developers to customize other credit actions for digital credit, but needs to undergo digital credit review and repeated testing. Applications can be placed on the Digital Credit application market.
+
+## Tokens and Smart Contracts
+
+### Token
+
+The tokens in Digital Credit, in the first official release, will have two forms: 1. Token DGCT through EOS.IO. 2. Token DGCT through Ethereum. Both of these tokens are called DGCT, but one is a token that EOSI.IO implements, and one is an ERC-20-compatible token. In the official release process, users can switch between two token solutions and can exchange one another. In subsequent releases, Digital Credit will also be compatible with Bitcoin, Bitcoin Cash or other tokens.
+
+The credit issuance part of Digital Credit is encapsulated by dMVC. Developers of Digital Credit do not need to know EOS.IO, C/C++ and Solidity specifically and can easily write programs to release tokens.
+
+### Smart Contract
+
+The smart contract in the Digital Credit EOS.IO version is based on EOS.IO, while the smart contract in the Digital Credit Ethereum version is based on Ethereum. In Digital Credit, smart contracts include:
+1. A reward contract that demonstrates the ability to challenge, competition, posting, teaching, contribution, review, etc.
+2. Contracts for awarding credits, loans, crowdfunding, ticket sales, etc. in digital credit credit actions.
+
+When both parties to the contract agree and sign the contract, the contract comes into effect, and when the terms of the contract are fulfilled, the contract is executed.
+
+Digital Credit encapsulates smart contracts with dMVC. Developers of Digital Credit do not need to know EOS.IO, C/C++ and Solidity specifically and can easily write programs to implement smart contracts.
+
+## Dispute Resolution
+
+### Default or Fraud Treatment
+
+When there is a breach of contract or fraud in Digital Credit, such as overdue loans, ICO projects not proceeding as planned, ICO fraud, etc., Digital Credit will conduct default treatment, including:
+
+1. Penalty (including token punishment)
+2. Reduced ability, credit rating
+3. Role demotion (for example, from a certain area reviewers to ordinary members)
+4. Prohibit transactions
+5. Broadcast its breach of contract in community
+6. Restricted access (such as the prohibition of lending, crowdfunding, selling tickets, and participating in certain POAs)
+7. Close account
+
+### Minimize Loss and Recovery
+
+Digital Credit sets a lot of strict rules to ensure that when users experience default or fraud, the damage they suffer can be minimized. Digital Credit also specifies some rules to ensure that when losses occur, user losses can be minimized in the shortest possible time.
+
+For example, Digital Credit has set strict ICO requirements. For example, the tokens raised by ICO will not be issued to the project party all in one, but will be distributed in bulk according to the actual progress of the project. For details, see the section [Approving Crowdfunding](#approving-crowdfunding).
+
+### Loss Compensation
+
+In the event that Digital Credit’s own errors, loopholes, bugs, and other mistakes cause user losses, the Digital Credit [Central Account](#central-account) will compensate for losses based on the user’s specific losses.
+
+### Account Loss Prevention and Account Recovery
+
+In order to prevent user accounts from losing control, Digital Credit has set up the following security measures:
+1. Users need to set security verification questions, mobile phone number, email, etc. when setting up an account.
+2. The user can fill in identity authentication information when establishing an account.
+3. The user can choose to fill in the security verification question when the account private key is modified, or enter the mobile phone verification code, email verification code etc..
+4. The user can choose whether to limit the IP range of the account login, or set security alerts. That is, when the user logs in at an unconventional IP address, he or she is required to enter a security verification question or enter a mobile phone verification code, an email verification code etc..
+5. When the ownership of the user account is lost and the private key is changed, the user can retrieve the lost account by answering the security verification question, mobile phone verification code, and Email verification.
+6. When the user has forgotten the security verification question, he can also retrieve it by recalling the ability actions or digital credit actions participated in the past one month.
+7. Theoretically, when the user logs in from a different IP, if he can't answer the security question correctly and fill in the correct mobile phone and Email verification code, the user cannot log in to his Digital Credit account.
+8. The user can set a second verification when the transferred token is greater than a certain amount. (Security verification questions, mobile verification, email verification, etc.)
+
+# View
+
+## Client
+
+Digital Credit will support multiple clients such as: web, PC, Mac, Linux, iOS, Android, etc. The client includes a primary client and a custom client. The main client is the client officially released by Digital Credit and runs the main program of Digital Credit. The hird-party client developed by the application developer can be found from application market in Digital Credit, or it can be an independent client.
+
+### Main Client
+
+The front-end of the web moderator client is generally written in a script language running on the server, such as: jsp, php, asp, asp.net, Node.js, and so on. Digital Credit allows application developers to write web front-ends using a variety of server-side scripting languages.
+
+The Digital Credit main client for PC, Mac, and Linux will be developed by default using the Go language and communicate with the Digital Credit server via the service.
+
+The main program of mobile phone client such as iOS and Android, Digital Credit will be written in Swift and Java language, and communicate with Digital Credit server through service.
+
+### Third-Party Client
+
+Application developers can develop third-party clients based on the framework provided by Digital Credit. For example, develop your own client but use the services of the Digital Credit server. Third-party clients need to be reviewed if they want to be registered the digital credit application market.
+
+## Application Development
+
+### Development Language
+
+The Digital Credit application development language defaults to Javascript (Node.js) and Go, and will support Python and Java in the early releases.
+
+### API
+
+dMVC will provide complete Javascript, Go, Python and Java APIs to help developers easily develop decentralized digital credit applications.
+
+### HTTP service
+
+The Digital Credit platform allows developers to develop HTTP services for invocation.
+
+### RPC
+
+The Digital Credit platform will also support developers developing RPCs for remote calls.
+
+### Cloud Service
+
+Digital Credit allows developers to develop digital credit applications and services in the cloud and publish digital credit applications to the cloud provided by Digital Credit without having to build their own environment.
+
+### Front-End Scripting Language
+
+Digital Credit allows developers to develop digital credit applications through a variety of front-end scripting languages, including: jsp, asp, asp.net, php, Node.js, and more.
+
+## Publish Apps/Services
+
+### Registration of Application/Service
+
+Digital Credit community members can apply for an App account and App Key. App accounts and App Keys can be used by application developers to call Digital Credit services. Some services and permissions may require that application developers have certain qualifications to apply. These qualifications may include: skills or ability requirements, credit requirements, etc.
+
+The App account and App Key issued by the developer through Digital Credit can register digital credit applications or services based on Digital Credit. After the registration application/service is submitted, the application/service registration will only become available after approval of Digital Credit.
+
+Applications/services that are registered and approved can be submitted to the application market of Digitial Credit.
+
+### Application Market
+
+Digital Credit's application market supports two application submission methods: one is cloud service approach, and the other is local service approach.
+
+The cloud service approach: Application developers upload code online to the Digital Credit dMVC online development platform based on the dMVC design framework. After passing the test and verification, it can be used in Digital Credit. Developers of cloud services do not need to build any local environment or server and share the distributed servers of the Digital Credit community to implement data storage and call functions.
+
+Local service approach: Application developers build an application development environment locally, and after submitting applications or services based on Digital Credit services and APIs locally, they submit a Digital Credit for review. After the submission is approved, their applications or services can be found in the Digital Credit App Market.
+
+### Main Net
+
+The main network is the officially applied network provided by Digital Credit. The main network establishes Digital Credit servers in a distributed manner. In Digital Credit 1.0, Digital Credit will use Tendermint and BigchainDB to build distributed, decentralized data storage servers. In the Digital Credit EOS.IO version, EOS.IO will be used to implement tokens and smart contracts; Digital Credit Ethereum will use Ethereum to implement tokens and smart contracts.
+
+Digital Credit's community and cloud service applications will all run directly on the main network; local service applications will call Digital Credit's methods and data, and the application will run on the application developer's server.
+
+### Nodes and Super Nodes
+
+Digital Credit 1.0 will use Tendermint and BigchainDB for data storage and will use a minimum of 21 server nodes to run the Digital Credit service. Digital Credit will also welcome more nodes to enhance the security of the Digital Credit network. When the joining server node meets the requirements of the super node, that is, when the server performance and security meet certain requirements, the server node will be selected as a super node. For each node that runs a Digital Credit service, Digital Credit will give corresponding rewards based on the degree of contribution of the node. Super node owners will receive higher rewards than regular nodes.
+
+### Test Net
+
+The test network, Digital Credit will provide a test network environment. Application developers can freely test their digital credit applications on the test network. When the test environment of the application requires the use of other tokens, such as Bitcoin, ETH, etc., the corresponding token costs and fees are borne by the testers themselves.
+
+### Private Net
+
+The private network is built by third-party who uses the source code of Digital Credit for application development, and does not connect to the main network of Digital Credit and implements the Digital Credit function in its own environment. Because Digital Credit is open source software, as long as the third party complies with Digital Credit's GPL License(Please see [License](#license) section), Digital Credit will not restrict the use and modification of Digital Credit's source code by third parties, including setting up a private network.
+
+
