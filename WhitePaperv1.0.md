@@ -20,12 +20,30 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 <!-- MarkdownTOC depth=4 autolink=true bracket=round list_bullets="-*+" -->
 
 - [Background](#background)
-
+  * [Pain Points and Challenges in Current Credit System](#pain-points-and-challenges-in-current-credit-system)
+  * [The Keys to a Better Credit System](#the-keys-to-a-better-credit-system)
+  * [Blockchain Technology Opportunities](#blockchain-technology-opportunities)
+- [Requirements for Blockchain Technology Based Digital Credit Communities and Applications](#requirements-for-blockchain-technology-based-digital-credit-communities-and-applications)
+  * [Support Millions of Users](#support-millions-of-users)
+  * [Free Usage](#free-usage)
+  * [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
+  * [Low Latency](#low-latency)
+  * [High Performance](#high-performance)
+  * [Openness](#openness)
+  * [Decentralization](#decentralization)
+  * [Easy to Develop](#easy-to-develop)
+  * [Verifiable](#verifiable)
+  * [Community Based](#community-based)
+  * [Autonomy](#autonomy)
+  * [Distributed Storage, Persistent Storage, Immutability](#distributed-storage-persistent-storage-immutability)
+  * [Default and Fraud Prevention, Loss Recovery](#default-and-fraud-prevention-loss-recovery)
+  * [Proactive Credit Assessment](#proactive-credit-assessment)
+ 
 <!-- /MarkdownTOC -->
 
 # Background
 
-## Pain points and Challenges in current credit system
+## Pain Points and Challenges in Current Credit System
 
 1. Current credit reports and scores have limitations: (i) The credit system is often based on the creditor's current income level, payment and repayment records, credit history, number of applications for credit account, etc. It is impossible to completely and objectively evaluate the credit of the creditor. (ii) Once the creditor has made a mistake, such as accidentally forgetting to repay the credit card, it will have a great negative impact on its credit score. (iii) For freelancers who do not have a stable job, or who are in underdeveloped areas, poverty-stricken areas, or social bottoms, even if they have creditability, they often fails to obtain credit based on traditional credit models. (iv) The credit rating of the creditor is passive and its cannot be improved through active actions.
 
@@ -39,7 +57,7 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 6. In the field of venture capital investment, investors are often unable to effectively verify and evaluate the true level of capabilities of the start-up entrepreneurs and suffer losses; start-up entrepreneurs who have great ideas and action forces are unable to obtain investment because of lack of social relations and connections.
 
-## The keys to a better credit system
+## The Keys to a Better Credit System
 
 1. It must be able to ensure the objectivity, authenticity, and immutability of evaluations of creditors' credit rating, and can fully assess the credibility of creditors.
 
@@ -53,11 +71,11 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
 6. It is necessary to ensure a mechanism: the evaluation of the credibility of creditors will not be affected by external factors such as their region, gender, race, country, religion, wealth, social level, social identity, etc., and it is absolutely authentic, objective, fair and trustworthy.
 
-## Blockchain technology opportunities
+## Blockchain Technology Opportunities
 
 In 2008, with the release of Bitcoin, blockchain technology began to be widely used by enterprises and developers. Blockchain technology makes it possible to create decentralized, trustworthy, immutable, secure, and objective applications.
 
-# Requirements for Blockchain Technology based Digital Credit Communities and Applications
+# Requirements for Blockchain Technology Based Digital Credit Communities and Applications
 
 By using blockchain technology, it is possible to implement a decentralized community and application platform that can be comprehensive, objective, authentic, fair, and effective to assess the credit status of creditors. In order to gain widespread use, communities and applications require a platform that is flexible enough to meet the following requirements:
 
@@ -99,7 +117,7 @@ The blockchain digital credit application platform, if the development is very s
 
 Credit evaluations obtained by creditors must be verifiable, so as to ensure the objectivity, authenticity, and validity of the credit assessment.
 
-## Community
+## Community Based
 
 The community-based blockchain digital credit community and application platform can better guide its members to participate active interactions and encourage their active participations in community contributions.
 
