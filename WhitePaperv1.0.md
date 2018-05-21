@@ -74,15 +74,65 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
       - [Decision Mode](#decision-mode)
       - [Automatic Review](#automatic-review)
       - [Manual Review](#manual-review)
-        / [The Review Board](#the-review-board)
-        / [Scorecard](#scorecard)
-        / [Result Aggregation](#result-aggregation)
-        / [Appeal](#appeal)
-        / [Re-review](#re-review)
+        - [The Review Board](#the-review-board)
+        - [Scorecard](#scorecard)
+        - [Result Aggregation](#result-aggregation)
+        - [Appeal](#appeal)
+        - [Re-review](#re-review)
     + [Voting](#voting)
     + [Custom Ability Proof Action](#custom-ability-proof-action)
-      
-  
+  * [Digital Credit Evaluation](#digital-credit-evaluation)
+    + [Central Account](#central-account)
+    + [Autonomous, Positive and Negative Actions](#autonomous-positive-and-negative-actions)
+  * [Digital Credit Credit Action](#digital-credit-credit-action)
+    + [Awarding Rewards](#awarding-rewards)
+    + [Issuing Loans](#issuing-loans)
+    + [Approving Crowdfunding](#approving-crowdfunding)
+    + [Allowing Sales of Tickets](#allowing-sales-of-tickets)
+    + [Other Custom Digital Credit Credit Action](#other-custom-digital-credit-credit-action)
+  * [Tokens and Smart Contracts](#tokens-and-smart-contracts)
+    + [Token](#token)
+    + [Smart Contract](#smart-contract)
+  * [Dispute Resolution](#dispute resolution)
+    + [Default or Fraud Treatment](#default-or-fraud-treatment)
+    + [Minimize Loss and Recovery](#minimize-loss-and-recovery)
+    + [Loss Compensation](#loss-compensation)
+    + [Account Loss Prevention and Account Recovery](#account-Loss-prevention-and-account-recovery)
+- [View](#view)
+  * [Client](#client)
+  * [Main Client](#main-client)
+  * [Third-Party Client](#third-party-client)
+  * [Application Development](#application-development)
+    + [Development Language](#development-language)
+    + [API](#api)
+    + [HTTP service](#http-service)
+    + [RPC](#rpc)
+    + [Cloud Service](#cloud-service)
+    + [Front-End Scripting Language](#front-end-scripting-language)
+  * [Publish Apps/Services](#publish-apps-services)
+    + [Registration of Application/Service](#registration-of-application-service)
+    + [Application Market](#application-market)
+    + [Main Net](#main-net)
+    + [Nodes and Super Nodes](#nodes-and-super-nodes)
+    + [Test Net](#test-net)
+    + [Private Net](#private-net)
+- [Business Application Scenarios and Areas](#business-application-scenarios-and-areas)
+  * [Investment](#investment)
+  * [Financial Lending](#financial-lending)
+  * [Crowdfunding, ICO](#crowdfunding-ico)
+  * [Venture Capital, Start-Up Investment](#venture-capital-start-up-investment)
+  * [Software and Project Outsourcing](#software-and-project-outsourcing)
+  * [Human Resources](#human-resources)
+  * [Other Business Areas](#other-business-areas)
+- [Non-Profit, Non-Commercial Application Scenarios](#non-profit-non-commercial-application-scenarios)
+  * [Poverty Problem](#poverty-problem)
+  * [Social Equity Problem](#social-equity-problem)
+  * [Corruption Problem](#corruption-problem)
+  * [Refugees, Illegal Immigration Problem](#refugees-illegal-immigration-problem)
+  * [Other Public Welfare Issues](#other-public-welfare-issues)
+- [Conclusion](#conclusion)
+- [License](#license)
+
 
  
 <!-- /MarkdownTOC -->
@@ -234,9 +284,9 @@ Example 1:
 public class Post extends Asset {
 
     public String title;
-    
+
     public String content;
-    
+
     public Date postDate;
 
     @ManyToOne
@@ -244,7 +294,7 @@ public class Post extends Asset {
 
     @OneToMany
     public List<Comment> comments;
-    
+
 }
 ```
 
@@ -334,11 +384,11 @@ Finding via JPQL:
 
 ```java
 List<Post> posts = Post.find(
-    
+
     "select p from Post p, Comment c " +
-    
+
     "where c.post = p and c.subject like ?", "%hop%"
-    
+
 );
 ```
 
@@ -376,11 +426,11 @@ We can have a Posts Action class that specifically handles post-related action c
 public class Posts extends Controller {
  
     Public static void getPostsByCategory(String category) {
-    
+
         List <Posts posts = Post.findByCategory(category);
-        
+
         render(posts);
-        
+
     }
  
 }
@@ -398,58 +448,58 @@ Json:
 {'asset': {'data': {'post': {'title': 'new post',
 
     'content': 'post content'}}},
-    
+
  'id': None,
- 
+
  'inputs': [{'fulfillment': {'public_key': 'GtMiC8DQ274d3wsW7R4MMNvMU6DLcd4U9vg43tu9fFTp',
- 
+
     'type': 'ed25519-sha-256'},
-    
+
    'fulfills': None,
-   
+
    'owners_before': ['GtMiC8DQ274d3wsW7R4MMNvMU6DLcd4U9vg43tu9fFTp']}],
-   
+
  'metadata': {'category': 'business'},
- 
+
  'operation': 'CREATE'
- 
+
  }
  ```
  
  The server method:
- 
+
  ```java
  public static void handlePostService(String json) {
- 
+
     Json requestJson = new Json(json);
-    
+
     if (requestJson.operation.equals("CREATE")) {
-    
+
          //create a post
-         
+
         ...
-        
+
         renderJSON(returnJson);
-        
+
 
     } else if (requestJson.operation.equals("TRANSFER")) {
-    
+
         //transfer a post
-        
+
    ...
         renderJSON(returnJson);
-        
+
     } else {
 
     }    
-    
+
 }
 ```
 ## Account Management
 
 ### Account Name
 
-The maximum length of the account name of Digital Credit is 12 characters (Chinese character will occupy 2 characters, if the account name is all Chinese, up to 6 Chinese characters are supported). 12 characters including English characters (a-z, A-Z), numbers (0-9), underscore (_), underscore (-), UTF-8 encoded characters of other countries (eg Simplified Chinese, Traditional Chinese, Japanese, Korean, etc.)
+The maximum length of the account name of Digital Credit is 12 characters (Chinese character will occupy 2 characters, if the account name is all Chinese, up to 6 Chinese characters are supported). 12 characters including English characters (a-z, A-Z), numbers (0-9), underscore ( _ ), underscore (-), UTF-8 encoded characters of other countries (eg Simplified Chinese, Traditional Chinese, Japanese, Korean, etc.)
 
 When creating an account, Digital Credit will detect the name of the account in order to avoid violated content such as verbal abuse, language intrusion, discrimination, verbal violence, and political infringement.
 
@@ -815,7 +865,7 @@ The security design of the central account is different from the general account
 3. The source code related to the transaction action of the central account can not be changed by single person when Digital Credit is officially launched.
 4. Each super node running Digital Credit will verify the consistency of the central account code when performing central account-related operations.
 
-### Autonomous, Positive and Negative Actionss
+### Autonomous, Positive and Negative Actions
 
 The construction of the Digital Credit community is highly dependent on self-government and encourages community members to engage in positive, meaningful, valuable, and positive actions, and not to engage in negative, meaningless, worthless, or negative actions.
 
@@ -871,7 +921,7 @@ When ICO crowdfunding applications are issued on Digital Credit, Digital Credit 
 
 3. The organizations that apply for launching ICOs need to provide the exact project schedule and milestones, as well as the number of crowdfunding tokens that need to be obtained after each milestone is completed. ICO crowdfunding tokens will not be transferred to the ICO application group's account all in one. Instead, they will be transferred in batches according to different phases and milestones. When the ICO application organization failed to complete the milestone target on schedule, and after the Digital Credit found that the project had a large gap with the milestone target and progress was slow, Digital Credit could temporarily stop transferring the subsequent ICO crowdfunding token to the ICO organizational account. If the ICO project ceases to be updated, Digital Credit believes that it is unable to perform or fraud, and Digital Credit can return the remaining crowdfunding tokens to the funders. At the same time, the credit rating of the ICO project organization and all members of the organization will be lowered, or even prohibited from trading, permission limits, closure of accounts, and even the entire network. The first Crowdfunding Coin obtained by the ICO crowdfunding organization is the Startup Tokens, and the start-up Tokens must not be higher than 40% of the ICO Total funding amount.
 
-4. The ICO project for the organization that applied the ICO must be open-source at Github. Digital Credit will regularly check the progress of the open source project. If progress does not meet expectations or if there is no progress at all, Digital Credit will warn the project holder, or even suspend the follow-up token transfer for the ICO project. 
+4. The ICO project for the organization that applied the ICO must be open-source at Github. Digital Credit will regularly check the progress of the open source project. If progress does not meet expectations or if there is no progress at all, Digital Credit will warn the project holder, or even suspend the follow-up token transfer for the ICO project.
 
 For crowdfunding actions without token issuance, it is similar to crowdfunding with token issuance. Crowdfunders ultimately need to submit a shaped product, service, and work to complete the initial crowdfunding performance and also need to set milestones for crowdfunding projects. With regard to crowdfunding without token issuance, the issuer may be an organization or individual and the crowdfunding may be as low as one. Fundraisers must meet the minimum skills required for their crowdfunding project. Similar to ICO crowdfunding, when crowdfunding fails to complete milestones on schedule, or progress is slow, or has no progress, or crowdfunding projects have stopped, Digital Credit can stop the follow-up of the supply of crowdfunding tokens and return the crowdfunding tokens.
 
@@ -1069,15 +1119,15 @@ Other business areas such as arts, music, sports, advertising, marketing, corpor
 
 The problem of poverty is a headache thorny issue for all countries. There are many root causes of poverty. One of them is that the poor people do not have better social opportunities. Poor families will certainly have possibilities to raise outstanding ability person. However, because their abilities cannot be identified due to their low social level and lack of social relations, it is difficult for them to be affirmed by the society and thus lose many job opportunities and credit opportunities.
 
-Digital Credit can provide a fair and just platform. As long as you can prove your ability, then you have the opportunity to get a loan or even a real job opportunity. 
+Digital Credit can provide a fair and just platform. As long as you can prove your ability, then you have the opportunity to get a loan or even a real job opportunity.
 
 At the same time, the Digital Credit community will reward community members who are actively helping the poor to educate and elevate the skills of the poor, encouraging them to contribute to social issues through positive incentives.
 
 ## Social Equity Problem
 
-The issue of social equity is also an issue that many countries cannot handle effectively. One of the root causes of the problem of social equity is that the bottom society does not have the social opportunities it deserves. For example, people from low-level families lack more social relationships than those from wealthy families, so their abilities cannot be effectively recognized and it is difficult for them to obtain equal social opportunities. 
+The issue of social equity is also an issue that many countries cannot handle effectively. One of the root causes of the problem of social equity is that the bottom society does not have the social opportunities it deserves. For example, people from low-level families lack more social relationships than those from wealthy families, so their abilities cannot be effectively recognized and it is difficult for them to obtain equal social opportunities.
 
-In the Digital Credit community, they are completely equal. All opportunities and credit opportunities are based entirely on ability and credit and have nothing to do with other factors. Digital Credit will not judge the members of the community in addition to their ability and includes any factors other than their ability and credit. Therefore, Digital Credit is a fair community, and it can give the bottom society a chance to show their true talent and job and credit opportunities. 
+In the Digital Credit community, they are completely equal. All opportunities and credit opportunities are based entirely on ability and credit and have nothing to do with other factors. Digital Credit will not judge the members of the community in addition to their ability and includes any factors other than their ability and credit. Therefore, Digital Credit is a fair community, and it can give the bottom society a chance to show their true talent and job and credit opportunities.
 
 ## Corruption Problem
 
