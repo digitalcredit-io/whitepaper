@@ -25,6 +25,7 @@ Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
   * [Blockchain Technology Opportunities](#blockchain-technology-opportunities)
 - [Requirements for Blockchain Technology Based Digital Credit Communities and Applications](#requirements-for-blockchain-technology-based-digital-credit-communities-and-applications)
   * [Support Millions of Users](#support-millions-of-users)
+  
   * [Free Usage](#free-usage)
   * [Easy Upgrades and Bug Recovery](#easy-upgrades-and-bug-recovery)
   * [Low Latency](#low-latency)
