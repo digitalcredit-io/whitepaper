@@ -1,6 +1,8 @@
-# Digital Credit White Paper v1.0
+# Digital Credit White Paper v1.1
 
 **May 13, 2018**
+
+**June 21, 2018 updated to version 1.1**
 
 [Bruce Zhang](https://www.facebook.com/bruce.zhang.35762)
 
@@ -19,9 +21,11 @@ Blog:[Why Blockchain is an Antidote to Great Human Problems such as Human Value 
 
 **PLEASE NOTE: CRYPTOGRAPHIC TOKENS(Digital Credit, DGCT) REFERRED TO IN THIS WHITE PAPER REFER TO CRYPTOGRAPHIC TOKENS IN TWO VERSIONS: 1. CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN BASED ON EOS.IO. 2. ERC-20 COMPATIBLE CRYPTOGRAPHIC TOKENS ON A LAUNCHED BLOCKCHAIN BASED ON ETHEREUM. ERC-20 COMPATIBLE TOKENS(Digital Credit, DGCT) BEING DISTRIBUTED ON THE ETHEREUM BLOCKCHAIN WILL BE APPLICABLE TO A DIGITAL CREDIT SOLUTION THAT IS COMPATIBLE WITH ETHEREUM: ULTILIZE ETHEREUM TO IMPLEMENT TOKES AND SMART CONTRACTS, ULTILIZE DMVC TO IMPLEMENT OTHER DIGITAL CREDIT FEATURES. MORE DETAILS CAN BE FOUND IN THE [COMPATIBILITY](#compatibility) SECTION.**
 
+**PLEASE NOTE: IN ADDITION TO VERSIONS BASED ON EOS.IO AND ETHEREUM, DIGITAL CREDIT WILL LAUNCH A VERSION WITH NO CRYPTOCURRENCY AFTER THE OFFICIAL RELEASE USING ONLY DMVC TO IMPLEMENT DISTRIBUTED STORAGE BASED ON BLOCKCHAIN AND ENABLE TRANSACTION AND PAYMENT FUNCTIONS BY LEGAL CURRENCY (RMB, USD). FOR DETAILS, PLEASE SEE: [COMPATIBILITY](#compatibility) SECTION.**
+
 Copyright © 2018 [digitalcredit.io](http://digitalcredit.io)
 
-**DISCLAIMER:** This Digital Credit White Paper v1.0 is for information purposes only. digitalcredit.io does not guarantee the accuracy of or the conclusions reached in this white paper, and this white paper is provided “as is”. digitalcredit.io does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. digitalcredit.io and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will digitalcredit.io or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
+**DISCLAIMER:** This Digital Credit White Paper v1.1 is for information purposes only. digitalcredit.io does not guarantee the accuracy of or the conclusions reached in this white paper, and this white paper is provided “as is”. digitalcredit.io does not make and expressly disclaims all representations and warranties, express, implied, statutory or otherwise, whatsoever, including, but not limited to: (i) warranties of merchantability, fitness for a particular purpose, suitability, usage, title or noninfringement; (ii) that the contents of this white paper are free from error; and (iii) that such contents will not infringe third-party rights. digitalcredit.io and its affiliates shall have no liability for damages of any kind arising out of the use, reference to, or reliance on this white paper or any of the content contained herein, even if advised of the possibility of such damages. In no event will digitalcredit.io or its affiliates be liable to any person or entity for any damages, losses, liabilities, costs or expenses of any kind, whether direct or indirect, consequential, compensatory, incidental, actual, exemplary, punitive or special for the use of, reference to, or reliance on this white paper or any of the content contained herein, including, without limitation, any loss of business, revenues, profits, data, use, goodwill or other intangible losses.
 
 <!-- MarkdownTOC depth=4 autolink=true bracket=round list_bullets="-*+" -->
 
@@ -245,6 +249,8 @@ The token and transaction portion of Digital Credit will be based on the well-kn
 
 **Note: In order to develop Digital Credit community and application platform more effective, speed up the launching progress, and improve transaction performance, Digital Credit 1.0 will utilize [EOS.IO](https://eos.io/) to implement tokens and tokens transactions, smart contracts, account management, role management and some other features. Data storage development will be based on [Tendermint](https://www.tendermint.com/) and [BigchainDB](https://www.bigchaindb.com/). The use of BigchainDB's decentralized and distributed database simplifies and encapsulates blockchain application development and can create an efficient, high-performance blockchain digital credit community and application platform.**
 
+**Note: In addition to the cryptocurrency versions based on EOS.IO and Ethereum, Digital Credit will simultaneously launch a version without cryptocurrency , using only dMVC to implement a decentralized, blockchain-based, distributed database.**
+
 **Note: Digital Credit will utilize [IPFS](https://ipfs.io/) to store files.**
 
 # Compatibility
@@ -258,6 +264,8 @@ At the same time, Digital Credit will also implement compatibility solutions for
 For example, Digital Credit will launch an Ethereum-compatible version of Ethereum that uses Ethereum's tokens and smart contracts, and uses dMVC to implement other Digital Credit functions, namely: Digital Credit Ethereum. Bitcoin compatible version will also be introduced, namely: Digital Credit Bitcoin and so on. Other compatible versions will be selectively developed based on the influence and acceptance of relevant blockchain platforms.
 
 In the compatible version, such as Digital Credit Ethereum, tokens and smart contracts for the entire platform are developed based on Ethereum, while the remaining functions are based on dMVC, such as: database and data storage, control (account management, role and organization management, POAs: challenges, competitions, tests, contributions, learnings, posts, rankings, achievements, reviews, votings, digital credit assessments, digital credit credit actions, etc.), user view features. When certain functions of Digital Credit need to be completed based on tokens and smart contracts features, for example, members of the Digital Credit application need to initiate an ICO crowdfunding, then the crowdfunding tokens are  initiated by Ethereum platform other than EOS.IO. Another example: members of the Digital Credit application need to apply for a loan. If the loan is approved, the credit tokens for the member to obtain is from Ethereum, ERC-20-compliant, Digital Credit (DGCT). After Digital Credit is released, Digital Credit (DGCT) released by the official version of Digital Credit (standard EOS.IO version) will be exchanged with ERC-20 compliant Digital Credit (DGCT) released by Ethereum. Users of Digital Credit can flexibly switch the tokens used to settle, trade, and run smart contracts when using the Digital Credit main program.
+
+Since in certain countries, cryptocurrency transactions and payments (such as China) are prohibited, Digital Credit will also implement a version without cryptocurrency, that is, only using dMVC to achieve blockchain-based distributed data storage, and use the legal currency (such as RMB and USD) for trading and payment. Non-cryptocurrency version will only be available in some countries. For users in these countries, if cryptocurrency transactions and payments are prohibited in their countries, Digital Credit will not allow cryptocurrencies for those users. Trading and payment functions are also not allowed to switch between other cryptocurrency compatible versions. Non-cryptocurrency version will implement web and mobile clients and will be released with the cryptocurrency version (EOS, Ethereum) at the same time.
 
 # Design Patterns
 
